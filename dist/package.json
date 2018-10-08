@@ -1,0 +1,19 @@
+{
+  "name": "nodeum-sdk",
+  "version": "1.77.0-0",
+  "description": "Nodeum SDK for JavaScript",
+  "main": "./index.node.js",
+  "browser": "./nodeum-sdk.js",
+  "module": "./esm5/index.js",
+  "es2015": "./esm2015/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeum-io/nodeum-sdk-js.git"
+  },
+  "author": "MT-C",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodeum-io/nodeum-sdk-js/issues"
+  },
+  "homepage": "https://github.com/nodeum-io/nodeum-sdk-js#readme"
+}

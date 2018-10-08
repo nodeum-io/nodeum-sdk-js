@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "outDir": "./dist",
+    "lib": ["DOM", "ES6"],
+    "types" : ["node"],
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true
+  },
+  "exclude": [
+    "./dist"
+  ]
+}

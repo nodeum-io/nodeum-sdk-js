@@ -1,0 +1,32 @@
+{
+  "name": "nodeum-sdk-sources",
+  "version": "1.77.0-0",
+  "description": "Nodeum SDK for JavaScript",
+  "scripts": {
+    "clean": "find dist -type f | grep -v 'dist/package.json' | xargs rm",
+    "browser": "webpack",
+    "cjs": "tsc -p ./tsconfig.cjs.json",
+    "esm5": "tsc -p ./tsconfig.esm5.json",
+    "esm2015": "tsc -p ./tsconfig.esm2015.json",
+    "build": "npm run clean && npm run browser && npm run cjs && npm run esm5 && npm run esm2015",
+    "version": "npm run build && cd dist && npm version $npm_package_version && git add package.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodeum-io/nodeum-sdk-js.git"
+  },
+  "author": "MT-C",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodeum-io/nodeum-sdk-js/issues"
+  },
+  "homepage": "https://github.com/nodeum-io/nodeum-sdk-js#readme",
+  "devDependencies": {
+    "@types/node": "^8.10.32",
+    "ts-loader": "^5.2.1",
+    "typescript": "^3.1.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
