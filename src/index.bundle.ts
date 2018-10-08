@@ -1,1 +1,5 @@
-export * from './storages/index.bundle'
+import * as storages from './storages'
+
+export {
+  storages
+}

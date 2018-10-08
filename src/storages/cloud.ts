@@ -1,0 +1,7 @@
+export { Bucket } from './cloud/bucket'
+export { BucketsRequest } from './cloud/buckets.request'
+export { CloudPoolsRequest } from './cloud/cloud-pool.request'
+export { CloudPool } from './cloud/cloud-pool'
+export { Cloud } from './cloud/cloud'
+export { CloudsRequest } from './cloud/clouds.request'
+export { Provider } from './cloud/provider.enum'
