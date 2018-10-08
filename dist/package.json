@@ -1,6 +1,6 @@
 {
   "name": "nodeum-sdk",
-  "version": "1.77.0-0",
+  "version": "1.77.1-0",
   "description": "Nodeum SDK for JavaScript",
   "main": "./index.node.js",
   "browser": "./nodeum-sdk.js",
