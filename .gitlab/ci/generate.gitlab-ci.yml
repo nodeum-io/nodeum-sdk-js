@@ -55,6 +55,7 @@ Publish SDK:
     - job: Generate SDK
       artifacts: true
   before_script:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
     - npm install
     - npm run prepack
   script:
