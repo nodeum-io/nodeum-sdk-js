@@ -17,7 +17,7 @@ import MountInfo from './MountInfo';
 /**
  * The MountNotification model module.
  * @module model/MountNotification
- * @version 1.85.0
+ * @version 1.85.1
  */
 class MountNotification {
     /**

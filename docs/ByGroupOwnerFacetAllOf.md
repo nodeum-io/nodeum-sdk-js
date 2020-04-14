@@ -1,4 +1,4 @@
-# NodeumSdk.ByGroupOwnerFacetAllOf
+# NodeumApi.ByGroupOwnerFacetAllOf
 
 ## Properties
 

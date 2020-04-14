@@ -1,4 +1,4 @@
-# NodeumSdk.CloudConnector
+# NodeumApi.CloudConnector
 
 ## Properties
 

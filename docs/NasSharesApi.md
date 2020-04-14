@@ -1,4 +1,4 @@
-# NodeumSdk.NasSharesApi
+# NodeumApi.NasSharesApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -36,8 +36,8 @@ Creates a new NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -48,9 +48,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
-let nasShareBody = new NodeumSdk.NasShare(); // NasShare | 
+let nasShareBody = new NodeumApi.NasShare(); // NasShare | 
 apiInstance.createNasShareByNas(nasId, nasShareBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -93,8 +93,8 @@ Destroys a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -105,7 +105,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.destroyNasShare(nasShareId, (error, data, response) => {
   if (error) {
@@ -148,8 +148,8 @@ Destroys a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -160,7 +160,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.destroyNasShareByNas(nasId, nasShareId, (error, data, response) => {
@@ -205,8 +205,8 @@ Destroys a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -217,7 +217,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.destroyNasShareByPool(poolId, nasShareId, (error, data, response) => {
@@ -262,8 +262,8 @@ Lists all NAS shares.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -274,7 +274,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -337,8 +337,8 @@ Lists all NAS shares.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -349,7 +349,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -412,8 +412,8 @@ Lists all NAS shares from pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -424,7 +424,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -487,8 +487,8 @@ Get mount status of NAS Share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -499,7 +499,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.mountStatusNasShare(nasShareId, (error, data, response) => {
   if (error) {
@@ -542,8 +542,8 @@ Get mount status of NAS Share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -554,7 +554,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.mountStatusNasShareByNas(nasId, nasShareId, (error, data, response) => {
@@ -599,8 +599,8 @@ Get mount status of NAS Share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -611,7 +611,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.mountStatusNasShareByPool(poolId, nasShareId, (error, data, response) => {
@@ -656,8 +656,8 @@ Displays a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -668,7 +668,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.showNasShare(nasShareId, (error, data, response) => {
   if (error) {
@@ -711,8 +711,8 @@ Displays a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -723,7 +723,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.showNasShareByNas(nasId, nasShareId, (error, data, response) => {
@@ -768,8 +768,8 @@ Displays a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -780,7 +780,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
 apiInstance.showNasShareByPool(poolId, nasShareId, (error, data, response) => {
@@ -825,8 +825,8 @@ Test an unsaved NAS Share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -837,9 +837,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
-let nasShareBody = new NodeumSdk.NasShare(); // NasShare | 
+let nasShareBody = new NodeumApi.NasShare(); // NasShare | 
 apiInstance.testNasShare(nasId, nasShareBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -882,8 +882,8 @@ Check result of a NAS Share test job.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -894,7 +894,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 let jobId = "jobId_example"; // String | ID of active job
 apiInstance.testResultNasShare(nasId, jobId, (error, data, response) => {
@@ -939,8 +939,8 @@ Updates a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -951,9 +951,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
-let nasShareBody = new NodeumSdk.NasShare(); // NasShare | 
+let nasShareBody = new NodeumApi.NasShare(); // NasShare | 
 apiInstance.updateNasShare(nasShareId, nasShareBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -996,8 +996,8 @@ Updates a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1008,10 +1008,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
-let nasShareBody = new NodeumSdk.NasShare(); // NasShare | 
+let nasShareBody = new NodeumApi.NasShare(); // NasShare | 
 apiInstance.updateNasShareByNas(nasId, nasShareId, nasShareBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -1055,8 +1055,8 @@ Updates a specific NAS share.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1067,10 +1067,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasSharesApi();
+let apiInstance = new NodeumApi.NasSharesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let nasShareId = "nasShareId_example"; // String | Numeric ID or name of NAS share.
-let nasShareBody = new NodeumSdk.NasShare(); // NasShare | 
+let nasShareBody = new NodeumApi.NasShare(); // NasShare | 
 apiInstance.updateNasShareByPool(poolId, nasShareId, nasShareBody, (error, data, response) => {
   if (error) {
     console.error(error);

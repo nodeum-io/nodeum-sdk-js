@@ -22,7 +22,7 @@ import TapeLibraryDeviceCollection from '../model/TapeLibraryDeviceCollection';
 /**
 * TapeLibraries service.
 * @module api/TapeLibrariesApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class TapeLibrariesApi {
 

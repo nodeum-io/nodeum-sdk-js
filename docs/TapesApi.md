@@ -1,4 +1,4 @@
-# NodeumSdk.TapesApi
+# NodeumApi.TapesApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -31,8 +31,8 @@ List all tape statistics.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -43,7 +43,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56 // Number | The number of items to skip for pagination.
@@ -90,8 +90,8 @@ Lists all tapes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -102,7 +102,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -201,8 +201,8 @@ Lists all tapes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -213,7 +213,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -312,8 +312,8 @@ Lists all tapes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -324,7 +324,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeLibraryId = "tapeLibraryId_example"; // String | Numeric ID, serial, or name of tape library.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -423,8 +423,8 @@ Get mount status of Tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -435,7 +435,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.mountStatusTape(tapeId, (error, data, response) => {
   if (error) {
@@ -478,8 +478,8 @@ Get mount status of Tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -490,7 +490,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.mountStatusTapeByPool(poolId, tapeId, (error, data, response) => {
@@ -535,8 +535,8 @@ Get mount status of Tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -547,7 +547,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeLibraryId = "tapeLibraryId_example"; // String | Numeric ID, serial, or name of tape library.
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.mountStatusTapeByTapeLibrary(tapeLibraryId, tapeId, (error, data, response) => {
@@ -592,8 +592,8 @@ Displays a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -604,7 +604,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.showTape(tapeId, (error, data, response) => {
   if (error) {
@@ -647,8 +647,8 @@ Displays a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -659,7 +659,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.showTapeByPool(poolId, tapeId, (error, data, response) => {
@@ -704,8 +704,8 @@ Displays a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -716,7 +716,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeLibraryId = "tapeLibraryId_example"; // String | Numeric ID, serial, or name of tape library.
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.showTapeByTapeLibrary(tapeLibraryId, tapeId, (error, data, response) => {
@@ -761,8 +761,8 @@ Display statistic for a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -773,7 +773,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.showTapeStat(tapeId, (error, data, response) => {
   if (error) {
@@ -816,8 +816,8 @@ Display statistic for a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -828,7 +828,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.showTapeStatByPool(poolId, tapeId, (error, data, response) => {
@@ -873,8 +873,8 @@ Display statistic for a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -885,7 +885,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TapesApi();
+let apiInstance = new NodeumApi.TapesApi();
 let tapeLibraryId = "tapeLibraryId_example"; // String | Numeric ID, serial, or name of tape library.
 let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
 apiInstance.showTapeStatByTapeLibrary(tapeLibraryId, tapeId, (error, data, response) => {

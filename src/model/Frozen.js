@@ -17,7 +17,7 @@ import AttributeError from './AttributeError';
 /**
  * The Frozen model module.
  * @module model/Frozen
- * @version 1.85.0
+ * @version 1.85.1
  */
 class Frozen {
     /**

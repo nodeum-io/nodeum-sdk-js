@@ -1,4 +1,4 @@
-# NodeumSdk.CloudBucketCollection
+# NodeumApi.CloudBucketCollection
 
 ## Properties
 

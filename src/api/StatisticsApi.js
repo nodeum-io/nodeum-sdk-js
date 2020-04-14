@@ -23,7 +23,7 @@ import ByUserOwnerFacet from '../model/ByUserOwnerFacet';
 /**
 * Statistics service.
 * @module api/StatisticsApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class StatisticsApi {
 

@@ -1,4 +1,4 @@
-# NodeumSdk.ContainerPrivilegeCollection
+# NodeumApi.ContainerPrivilegeCollection
 
 ## Properties
 

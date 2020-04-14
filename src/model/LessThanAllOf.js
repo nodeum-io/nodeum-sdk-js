@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The LessThanAllOf model module.
  * @module model/LessThanAllOf
- * @version 1.85.0
+ * @version 1.85.1
  */
 class LessThanAllOf {
     /**

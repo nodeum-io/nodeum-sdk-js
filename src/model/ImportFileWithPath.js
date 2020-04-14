@@ -18,7 +18,7 @@ import NodeumFileWithPathAllOf from './NodeumFileWithPathAllOf';
 /**
  * The ImportFileWithPath model module.
  * @module model/ImportFileWithPath
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ImportFileWithPath {
     /**

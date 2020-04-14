@@ -1,4 +1,4 @@
-# NodeumSdk.Blank
+# NodeumApi.Blank
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# NodeumSdk.OccurrenceLessThanAllOf
+# NodeumApi.OccurrenceLessThanAllOf
 
 ## Properties
 

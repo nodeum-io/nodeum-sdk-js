@@ -1,4 +1,4 @@
-# NodeumSdk.BySecondaryTypeFacetAllOf
+# NodeumApi.BySecondaryTypeFacetAllOf
 
 ## Properties
 

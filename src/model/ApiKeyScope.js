@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ApiKeyScope model module.
  * @module model/ApiKeyScope
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ApiKeyScope {
     /**

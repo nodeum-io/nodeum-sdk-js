@@ -1,4 +1,4 @@
-# NodeumSdk.TaskSourcesApi
+# NodeumApi.TaskSourcesApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -23,8 +23,8 @@ Creates a new task source.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -35,9 +35,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSourcesApi();
+let apiInstance = new NodeumApi.TaskSourcesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
-let taskSourceBody = new NodeumSdk.TaskSourceUp(); // TaskSourceUp | 
+let taskSourceBody = new NodeumApi.TaskSourceUp(); // TaskSourceUp | 
 apiInstance.createTaskSource(taskId, taskSourceBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -80,8 +80,8 @@ Destroys a specific task source.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -92,7 +92,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSourcesApi();
+let apiInstance = new NodeumApi.TaskSourcesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskSourceId = 56; // Number | Numeric ID of task source.
 apiInstance.destroyTaskSource(taskId, taskSourceId, (error, data, response) => {
@@ -137,8 +137,8 @@ Lists all task sources.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -149,7 +149,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSourcesApi();
+let apiInstance = new NodeumApi.TaskSourcesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -210,8 +210,8 @@ Displays a specific task source.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -222,7 +222,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSourcesApi();
+let apiInstance = new NodeumApi.TaskSourcesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskSourceId = 56; // Number | Numeric ID of task source.
 apiInstance.showTaskSource(taskId, taskSourceId, (error, data, response) => {
@@ -267,8 +267,8 @@ Updates a specific task source.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -279,10 +279,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSourcesApi();
+let apiInstance = new NodeumApi.TaskSourcesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskSourceId = 56; // Number | Numeric ID of task source.
-let taskSourceBody = new NodeumSdk.TaskSourceUp(); // TaskSourceUp | 
+let taskSourceBody = new NodeumApi.TaskSourceUp(); // TaskSourceUp | 
 apiInstance.updateTaskSource(taskId, taskSourceId, taskSourceBody, (error, data, response) => {
   if (error) {
     console.error(error);

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Nas model module.
  * @module model/Nas
- * @version 1.85.0
+ * @version 1.85.1
  */
 class Nas {
     /**

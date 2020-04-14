@@ -1,4 +1,4 @@
-# NodeumSdk.ByFileExtensionFacetAllOf
+# NodeumApi.ByFileExtensionFacetAllOf
 
 ## Properties
 

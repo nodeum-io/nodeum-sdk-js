@@ -1,4 +1,4 @@
-# NodeumSdk.TapeDriveAllOf
+# NodeumApi.TapeDriveAllOf
 
 ## Properties
 

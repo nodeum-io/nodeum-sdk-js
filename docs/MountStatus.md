@@ -1,4 +1,4 @@
-# NodeumSdk.MountStatus
+# NodeumApi.MountStatus
 
 ## Properties
 

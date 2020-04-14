@@ -1,4 +1,4 @@
-# NodeumSdk.ByDateFacetBucket
+# NodeumApi.ByDateFacetBucket
 
 ## Properties
 

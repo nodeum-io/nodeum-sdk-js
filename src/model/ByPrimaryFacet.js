@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByPrimaryFacet model module.
  * @module model/ByPrimaryFacet
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ByPrimaryFacet {
     /**

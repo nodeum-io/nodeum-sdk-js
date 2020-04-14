@@ -1,4 +1,4 @@
-# NodeumSdk.ByUserOwnerFacet
+# NodeumApi.ByUserOwnerFacet
 
 ## Properties
 

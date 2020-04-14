@@ -1,4 +1,4 @@
-# NodeumSdk.UsersApi
+# NodeumApi.UsersApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -25,8 +25,8 @@ Creates a new API Key for current user.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -37,8 +37,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
-let apiKeyBody = new NodeumSdk.ApiKeyFull(); // ApiKeyFull | 
+let apiInstance = new NodeumApi.UsersApi();
+let apiKeyBody = new NodeumApi.ApiKeyFull(); // ApiKeyFull | 
 apiInstance.createApiKey(apiKeyBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -80,8 +80,8 @@ Destroys a specific API Key.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -92,7 +92,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
+let apiInstance = new NodeumApi.UsersApi();
 let apiKeyId = 56; // Number | Numeric ID of API Key.
 apiInstance.destroyApiKey(apiKeyId, (error, data, response) => {
   if (error) {
@@ -135,8 +135,8 @@ Lists all API keys of current user.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -147,7 +147,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
+let apiInstance = new NodeumApi.UsersApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56 // Number | The number of items to skip for pagination.
@@ -194,8 +194,8 @@ List all system groups.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -206,7 +206,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
+let apiInstance = new NodeumApi.UsersApi();
 apiInstance.indexSystemGroups((error, data, response) => {
   if (error) {
     console.error(error);
@@ -245,8 +245,8 @@ List all system users.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -257,7 +257,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
+let apiInstance = new NodeumApi.UsersApi();
 apiInstance.indexSystemUsers((error, data, response) => {
   if (error) {
     console.error(error);
@@ -296,8 +296,8 @@ Displays a specific API Key with its scopes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -308,7 +308,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
+let apiInstance = new NodeumApi.UsersApi();
 let apiKeyId = 56; // Number | Numeric ID of API Key.
 apiInstance.showApiKey(apiKeyId, (error, data, response) => {
   if (error) {
@@ -351,8 +351,8 @@ Updates a specific API Key.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -363,9 +363,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.UsersApi();
+let apiInstance = new NodeumApi.UsersApi();
 let apiKeyId = 56; // Number | Numeric ID of API Key.
-let apiKeyBody = new NodeumSdk.ApiKeyFull(); // ApiKeyFull | 
+let apiKeyBody = new NodeumApi.ApiKeyFull(); // ApiKeyFull | 
 apiInstance.updateApiKey(apiKeyId, apiKeyBody, (error, data, response) => {
   if (error) {
     console.error(error);

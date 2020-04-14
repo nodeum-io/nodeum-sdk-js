@@ -1,4 +1,4 @@
-# NodeumSdk.TaskMetadatum
+# NodeumApi.TaskMetadatum
 
 ## Properties
 

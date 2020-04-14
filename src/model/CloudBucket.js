@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CloudBucket model module.
  * @module model/CloudBucket
- * @version 1.85.0
+ * @version 1.85.1
  */
 class CloudBucket {
     /**

@@ -1,4 +1,4 @@
-# NodeumSdk.MountsApi
+# NodeumApi.MountsApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -19,8 +19,8 @@ List all mounted storages.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -31,7 +31,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.MountsApi();
+let apiInstance = new NodeumApi.MountsApi();
 apiInstance.indexMounts((error, data, response) => {
   if (error) {
     console.error(error);

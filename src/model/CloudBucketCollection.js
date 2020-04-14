@@ -17,7 +17,7 @@ import CloudBucket from './CloudBucket';
 /**
  * The CloudBucketCollection model module.
  * @module model/CloudBucketCollection
- * @version 1.85.0
+ * @version 1.85.1
  */
 class CloudBucketCollection {
     /**

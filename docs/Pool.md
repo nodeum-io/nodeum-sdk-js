@@ -1,4 +1,4 @@
-# NodeumSdk.Pool
+# NodeumApi.Pool
 
 ## Properties
 

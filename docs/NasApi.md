@@ -1,4 +1,4 @@
-# NodeumSdk.NasApi
+# NodeumApi.NasApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -23,8 +23,8 @@ Creates a new NAS.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -35,8 +35,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasApi();
-let nasBody = new NodeumSdk.Nas(); // Nas | 
+let apiInstance = new NodeumApi.NasApi();
+let nasBody = new NodeumApi.Nas(); // Nas | 
 apiInstance.createNas(nasBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -78,8 +78,8 @@ Destroys a specific NAS.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -90,7 +90,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasApi();
+let apiInstance = new NodeumApi.NasApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 apiInstance.destroyNas(nasId, (error, data, response) => {
   if (error) {
@@ -133,8 +133,8 @@ Lists all NAS.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -145,7 +145,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasApi();
+let apiInstance = new NodeumApi.NasApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -206,8 +206,8 @@ Displays a specific NAS.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -218,7 +218,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasApi();
+let apiInstance = new NodeumApi.NasApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
 apiInstance.showNas(nasId, (error, data, response) => {
   if (error) {
@@ -261,8 +261,8 @@ Updates a specific NAS.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -273,9 +273,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.NasApi();
+let apiInstance = new NodeumApi.NasApi();
 let nasId = "nasId_example"; // String | Numeric ID or name of NAS.
-let nasBody = new NodeumSdk.Nas(); // Nas | 
+let nasBody = new NodeumApi.Nas(); // Nas | 
 apiInstance.updateNas(nasId, nasBody, (error, data, response) => {
   if (error) {
     console.error(error);

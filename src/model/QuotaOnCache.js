@@ -17,7 +17,7 @@ import AttributeError from './AttributeError';
 /**
  * The QuotaOnCache model module.
  * @module model/QuotaOnCache
- * @version 1.85.0
+ * @version 1.85.1
  */
 class QuotaOnCache {
     /**

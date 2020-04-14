@@ -17,7 +17,7 @@ import NasShare from './NasShare';
 /**
  * The NasShareCollection model module.
  * @module model/NasShareCollection
- * @version 1.85.0
+ * @version 1.85.1
  */
 class NasShareCollection {
     /**

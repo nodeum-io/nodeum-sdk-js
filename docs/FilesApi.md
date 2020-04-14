@@ -1,4 +1,4 @@
-# NodeumSdk.FilesApi
+# NodeumApi.FilesApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -46,8 +46,8 @@ Lists files under a specific folder.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -58,7 +58,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -127,8 +127,8 @@ Lists files under a specific folder.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -139,7 +139,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
@@ -210,8 +210,8 @@ Lists files under a specific folder.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -222,7 +222,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
@@ -293,8 +293,8 @@ Lists files under a specific folder.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -305,7 +305,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
@@ -376,8 +376,8 @@ Lists files under a specific folder.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -388,7 +388,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
@@ -459,8 +459,8 @@ Lists files under a specific folder.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -471,7 +471,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
@@ -544,8 +544,8 @@ Lists files under a specific folder on tape of pools, specific for Data Exchange
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -556,7 +556,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
@@ -627,8 +627,8 @@ Lists files on root.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -639,7 +639,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -706,8 +706,8 @@ Lists files on root.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -718,7 +718,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -787,8 +787,8 @@ Lists files on root.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -799,7 +799,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -868,8 +868,8 @@ Lists files on root.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -880,7 +880,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -949,8 +949,8 @@ Lists files on root.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -961,7 +961,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -1030,8 +1030,8 @@ Lists files on root.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1042,7 +1042,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let opts = {
@@ -1113,8 +1113,8 @@ Lists files on root of tape of pools, specific for Data Exchange.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1125,7 +1125,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -1194,8 +1194,8 @@ Lists files on root of tape of pools, specific for Active and Offline.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1206,7 +1206,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -1261,8 +1261,8 @@ Displays tapes containing specific file, related to the specific pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1273,7 +1273,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.indexTapesByFileByPool(poolId, fileId, (error, data, response) => {
@@ -1318,8 +1318,8 @@ Displays tapes containing specific file, related to the specific task.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1330,7 +1330,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.indexTapesByFileByTask(taskId, fileId, (error, data, response) => {
@@ -1375,8 +1375,8 @@ Displays tapes containing specific file, related to the specific task.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1387,7 +1387,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.indexTapesByFileByTaskExecution(taskExecutionId, fileId, (error, data, response) => {
@@ -1432,8 +1432,8 @@ Displays tapes containing specific file, related to the specific task.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1444,7 +1444,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let fileId = 56; // Number | Numeric ID of file.
@@ -1491,8 +1491,8 @@ Lists files under a specific folder on tape of pools, specific for Active and Of
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1503,7 +1503,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileParentId = 56; // Number | Numeric ID of parent folder.
 let opts = {
@@ -1560,8 +1560,8 @@ Displays a specific file.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1572,7 +1572,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showFile(fileId, (error, data, response) => {
   if (error) {
@@ -1615,8 +1615,8 @@ Displays a specific file.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1627,7 +1627,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showFileByContainer(containerId, fileId, (error, data, response) => {
@@ -1672,8 +1672,8 @@ Displays a specific file.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1684,7 +1684,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showFileByPool(poolId, fileId, (error, data, response) => {
@@ -1729,8 +1729,8 @@ Displays a specific file.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1741,7 +1741,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showFileByTask(taskId, fileId, (error, data, response) => {
@@ -1786,8 +1786,8 @@ Displays a specific file.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1798,7 +1798,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showFileByTaskExecution(taskExecutionId, fileId, (error, data, response) => {
@@ -1843,8 +1843,8 @@ Displays a specific file.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1855,7 +1855,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskExecutionId = "taskExecutionId_example"; // String | Numeric ID of task execution.
 let fileId = 56; // Number | Numeric ID of file.
@@ -1902,8 +1902,8 @@ Displays a specific file on tape of pools, specific for Data Exchange.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1914,7 +1914,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showImportFileByPool(poolId, fileId, (error, data, response) => {
@@ -1959,8 +1959,8 @@ Displays a specific file on tape of pools, specific for Active and Offline.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -1971,7 +1971,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.FilesApi();
+let apiInstance = new NodeumApi.FilesApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let fileId = 56; // Number | Numeric ID of file.
 apiInstance.showOnTapeFileByPool(poolId, fileId, (error, data, response) => {

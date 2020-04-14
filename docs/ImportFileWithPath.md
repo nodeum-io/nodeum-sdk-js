@@ -1,4 +1,4 @@
-# NodeumSdk.ImportFileWithPath
+# NodeumApi.ImportFileWithPath
 
 ## Properties
 

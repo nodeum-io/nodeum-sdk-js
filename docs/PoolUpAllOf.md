@@ -1,4 +1,4 @@
-# NodeumSdk.PoolUpAllOf
+# NodeumApi.PoolUpAllOf
 
 ## Properties
 

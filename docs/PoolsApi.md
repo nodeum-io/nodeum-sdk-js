@@ -1,4 +1,4 @@
-# NodeumSdk.PoolsApi
+# NodeumApi.PoolsApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -31,8 +31,8 @@ Creates a new pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -43,8 +43,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
-let poolBody = new NodeumSdk.PoolUp(); // PoolUp | 
+let apiInstance = new NodeumApi.PoolsApi();
+let poolBody = new NodeumApi.PoolUp(); // PoolUp | 
 apiInstance.createPool(poolBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -86,8 +86,8 @@ Set a new primary pool scan option.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -98,9 +98,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
-let primaryScanBody = new NodeumSdk.PrimaryScan(); // PrimaryScan | 
+let primaryScanBody = new NodeumApi.PrimaryScan(); // PrimaryScan | 
 apiInstance.createPrimaryScan(poolId, primaryScanBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -143,8 +143,8 @@ Destroys a specific tape pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -155,7 +155,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.destroyPool(poolId, (error, data, response) => {
   if (error) {
@@ -198,8 +198,8 @@ Disable the primary pool scan.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -210,7 +210,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.destroyPrimaryScan(poolId, (error, data, response) => {
   if (error) {
@@ -253,8 +253,8 @@ Lists all pools.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -265,7 +265,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -326,8 +326,8 @@ Mount Pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -338,7 +338,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.mountPool(poolId, (error, data, response) => {
   if (error) {
@@ -381,8 +381,8 @@ Get mount status of Pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -393,7 +393,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.mountStatusPool(poolId, (error, data, response) => {
   if (error) {
@@ -436,8 +436,8 @@ Displays a specific pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -448,7 +448,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.showPool(poolId, (error, data, response) => {
   if (error) {
@@ -491,8 +491,8 @@ Displays the primary pool scan status.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -503,7 +503,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.showPrimaryScan(poolId, (error, data, response) => {
   if (error) {
@@ -546,8 +546,8 @@ Synchronize a primary after a scan (for internal use only).
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -558,7 +558,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let tx = 56; // Number | New transaction number.
 apiInstance.syncPrimaryPool(poolId, tx, (error, data, response) => {
@@ -603,8 +603,8 @@ Unmount Pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -615,7 +615,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 apiInstance.unmountPool(poolId, (error, data, response) => {
   if (error) {
@@ -658,8 +658,8 @@ Updates a specific pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -670,9 +670,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
-let poolBody = new NodeumSdk.PoolUp(); // PoolUp | 
+let poolBody = new NodeumApi.PoolUp(); // PoolUp | 
 apiInstance.updatePool(poolId, poolBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -715,8 +715,8 @@ Updates the existing primary pool scan option.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -727,9 +727,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.PoolsApi();
+let apiInstance = new NodeumApi.PoolsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
-let primaryScanBody = new NodeumSdk.PrimaryScan(); // PrimaryScan | 
+let primaryScanBody = new NodeumApi.PrimaryScan(); // PrimaryScan | 
 apiInstance.updatePrimaryScan(poolId, primaryScanBody, (error, data, response) => {
   if (error) {
     console.error(error);

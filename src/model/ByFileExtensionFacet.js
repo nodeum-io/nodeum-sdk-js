@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByFileExtensionFacet model module.
  * @module model/ByFileExtensionFacet
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ByFileExtensionFacet {
     /**

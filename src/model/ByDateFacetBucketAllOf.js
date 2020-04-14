@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ByDateFacetBucketAllOf model module.
  * @module model/ByDateFacetBucketAllOf
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ByDateFacetBucketAllOf {
     /**

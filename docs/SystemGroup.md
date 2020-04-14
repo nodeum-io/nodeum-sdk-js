@@ -1,4 +1,4 @@
-# NodeumSdk.SystemGroup
+# NodeumApi.SystemGroup
 
 ## Properties
 

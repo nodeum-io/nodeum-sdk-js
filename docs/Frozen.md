@@ -1,4 +1,4 @@
-# NodeumSdk.Frozen
+# NodeumApi.Frozen
 
 ## Properties
 

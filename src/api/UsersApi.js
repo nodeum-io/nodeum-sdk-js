@@ -21,7 +21,7 @@ import SystemUserCollection from '../model/SystemUserCollection';
 /**
 * Users service.
 * @module api/UsersApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class UsersApi {
 

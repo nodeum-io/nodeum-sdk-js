@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The BySecondaryBucketAllOf model module.
  * @module model/BySecondaryBucketAllOf
- * @version 1.85.0
+ * @version 1.85.1
  */
 class BySecondaryBucketAllOf {
     /**

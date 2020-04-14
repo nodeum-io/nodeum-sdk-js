@@ -23,7 +23,7 @@ import TapeStatCollection from '../model/TapeStatCollection';
 /**
 * Tapes service.
 * @module api/TapesApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class TapesApi {
 

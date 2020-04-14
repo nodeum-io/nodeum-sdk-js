@@ -20,7 +20,7 @@ import TaskScheduleCollection from '../model/TaskScheduleCollection';
 /**
 * TaskSchedules service.
 * @module api/TaskSchedulesApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class TaskSchedulesApi {
 

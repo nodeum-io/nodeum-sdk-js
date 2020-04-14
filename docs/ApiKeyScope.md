@@ -1,4 +1,4 @@
-# NodeumSdk.ApiKeyScope
+# NodeumApi.ApiKeyScope
 
 ## Properties
 

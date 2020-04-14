@@ -1,4 +1,4 @@
-# NodeumSdk.FileFacet
+# NodeumApi.FileFacet
 
 ## Properties
 

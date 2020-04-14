@@ -17,7 +17,7 @@ import ByDateFacetBucket from './ByDateFacetBucket';
 /**
  * The ByDateFacetBuckets model module.
  * @module model/ByDateFacetBuckets
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ByDateFacetBuckets {
     /**

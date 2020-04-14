@@ -17,7 +17,7 @@ import SystemGroup from './SystemGroup';
 /**
  * The SystemGroupCollection model module.
  * @module model/SystemGroupCollection
- * @version 1.85.0
+ * @version 1.85.1
  */
 class SystemGroupCollection {
     /**

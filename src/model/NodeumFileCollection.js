@@ -17,7 +17,7 @@ import NodeumFile from './NodeumFile';
 /**
  * The NodeumFileCollection model module.
  * @module model/NodeumFileCollection
- * @version 1.85.0
+ * @version 1.85.1
  */
 class NodeumFileCollection {
     /**

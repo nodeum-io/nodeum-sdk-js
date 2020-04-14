@@ -1,4 +1,4 @@
-# NodeumSdk.Error
+# NodeumApi.Error
 
 ## Properties
 

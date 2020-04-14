@@ -1,4 +1,4 @@
-# NodeumSdk.PrimaryScan
+# NodeumApi.PrimaryScan
 
 ## Properties
 

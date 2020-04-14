@@ -1,4 +1,4 @@
-# NodeumSdk.ImportFileCollection
+# NodeumApi.ImportFileCollection
 
 ## Properties
 

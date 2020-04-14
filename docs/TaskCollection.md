@@ -1,4 +1,4 @@
-# NodeumSdk.TaskCollection
+# NodeumApi.TaskCollection
 
 ## Properties
 

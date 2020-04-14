@@ -1,4 +1,4 @@
-# NodeumSdk.MountNotification
+# NodeumApi.MountNotification
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# NodeumSdk.ContainersApi
+# NodeumApi.ContainersApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -28,8 +28,8 @@ It **does not** yet create the file structure and configure the samba connection
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -40,8 +40,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
-let containerBody = new NodeumSdk.Container(); // Container | 
+let apiInstance = new NodeumApi.ContainersApi();
+let containerBody = new NodeumApi.Container(); // Container | 
 apiInstance.createContainer(containerBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -83,8 +83,8 @@ Creates a new privilege on the container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -95,9 +95,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
-let containerPrivilegeBody = new NodeumSdk.ContainerPrivilege(); // ContainerPrivilege | 
+let containerPrivilegeBody = new NodeumApi.ContainerPrivilege(); // ContainerPrivilege | 
 apiInstance.createContainerPrivilege(containerId, containerPrivilegeBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -140,8 +140,8 @@ Destroys a specific container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -152,7 +152,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 apiInstance.destroyContainer(containerId, (error, data, response) => {
   if (error) {
@@ -195,8 +195,8 @@ Destroys a specific privilege.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -207,7 +207,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let containerPrivilegeId = 56; // Number | Numeric ID of container privilege.
 apiInstance.destroyContainerPrivilege(containerId, containerPrivilegeId, (error, data, response) => {
@@ -252,8 +252,8 @@ Lists all privilege on the container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -264,7 +264,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -323,8 +323,8 @@ Lists all containers.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -335,7 +335,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -404,8 +404,8 @@ Displays a specific container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -416,7 +416,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 apiInstance.showContainer(containerId, (error, data, response) => {
   if (error) {
@@ -459,8 +459,8 @@ Displays a specific privilege.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -471,7 +471,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let containerPrivilegeId = 56; // Number | Numeric ID of container privilege.
 apiInstance.showContainerPrivilege(containerId, containerPrivilegeId, (error, data, response) => {
@@ -516,8 +516,8 @@ It **does not** yet create the file structure and configure the samba connection
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -528,9 +528,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
-let containerBody = new NodeumSdk.Container(); // Container | 
+let containerBody = new NodeumApi.Container(); // Container | 
 apiInstance.updateContainer(containerId, containerBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -573,8 +573,8 @@ Updates a specific privilege.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -585,10 +585,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.ContainersApi();
+let apiInstance = new NodeumApi.ContainersApi();
 let containerId = "containerId_example"; // String | Numeric ID or name of container.
 let containerPrivilegeId = 56; // Number | Numeric ID of container privilege.
-let containerPrivilegeBody = new NodeumSdk.ContainerPrivilege(); // ContainerPrivilege | 
+let containerPrivilegeBody = new NodeumApi.ContainerPrivilege(); // ContainerPrivilege | 
 apiInstance.updateContainerPrivilege(containerId, containerPrivilegeId, containerPrivilegeBody, (error, data, response) => {
   if (error) {
     console.error(error);

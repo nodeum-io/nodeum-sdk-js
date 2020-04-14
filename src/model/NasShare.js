@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NasShare model module.
  * @module model/NasShare
- * @version 1.85.0
+ * @version 1.85.1
  */
 class NasShare {
     /**

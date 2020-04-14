@@ -1,4 +1,4 @@
-# NodeumSdk.CloudBucketsApi
+# NodeumApi.CloudBucketsApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -32,8 +32,8 @@ Lists all cloud buckets.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -44,7 +44,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -105,8 +105,8 @@ Lists all cloud buckets.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -117,7 +117,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -178,8 +178,8 @@ Lists all cloud buckets from pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -190,7 +190,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -251,8 +251,8 @@ Get mount status of Cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -263,7 +263,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
 apiInstance.mountStatusCloudBucket(cloudBucketId, (error, data, response) => {
   if (error) {
@@ -306,8 +306,8 @@ Get mount status of Cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -318,7 +318,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
 apiInstance.mountStatusCloudBucketByCloudConnector(cloudConnectorId, cloudBucketId, (error, data, response) => {
@@ -363,8 +363,8 @@ Get mount status of Cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -375,7 +375,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
 apiInstance.mountStatusCloudBucketByPool(poolId, cloudBucketId, (error, data, response) => {
@@ -420,8 +420,8 @@ Displays a specific cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -432,7 +432,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
 apiInstance.showCloudBucket(cloudBucketId, (error, data, response) => {
   if (error) {
@@ -475,8 +475,8 @@ Displays a specific cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -487,7 +487,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
 apiInstance.showCloudBucketByCloudConnector(cloudConnectorId, cloudBucketId, (error, data, response) => {
@@ -532,8 +532,8 @@ Displays a specific cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -544,7 +544,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
 apiInstance.showCloudBucketByPool(poolId, cloudBucketId, (error, data, response) => {
@@ -589,8 +589,8 @@ Synchronize internal cloud buckets with their remote equivalent.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -601,7 +601,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 apiInstance.syncCloudBuckets(cloudConnectorId, (error, data, response) => {
   if (error) {
@@ -644,8 +644,8 @@ Check result of cloud connector sync job.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -656,7 +656,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 let jobId = "jobId_example"; // String | ID of active job
 apiInstance.syncResultCloudBuckets(cloudConnectorId, jobId, (error, data, response) => {
@@ -701,8 +701,8 @@ Updates a specific cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -713,9 +713,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
-let cloudBucketBody = new NodeumSdk.CloudBucket(); // CloudBucket | 
+let cloudBucketBody = new NodeumApi.CloudBucket(); // CloudBucket | 
 apiInstance.updateCloudBucket(cloudBucketId, cloudBucketBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -758,8 +758,8 @@ Updates a specific cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -770,10 +770,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
-let cloudBucketBody = new NodeumSdk.CloudBucket(); // CloudBucket | 
+let cloudBucketBody = new NodeumApi.CloudBucket(); // CloudBucket | 
 apiInstance.updateCloudBucketByCloudConnector(cloudConnectorId, cloudBucketId, cloudBucketBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -817,8 +817,8 @@ Updates a specific cloud bucket.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -829,10 +829,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudBucketsApi();
+let apiInstance = new NodeumApi.CloudBucketsApi();
 let poolId = "poolId_example"; // String | Numeric ID, or name of pool.
 let cloudBucketId = "cloudBucketId_example"; // String | Numeric ID or name of cloud bucket.
-let cloudBucketBody = new NodeumSdk.CloudBucket(); // CloudBucket | 
+let cloudBucketBody = new NodeumApi.CloudBucket(); // CloudBucket | 
 apiInstance.updateCloudBucketByPool(poolId, cloudBucketId, cloudBucketBody, (error, data, response) => {
   if (error) {
     console.error(error);

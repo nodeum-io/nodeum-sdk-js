@@ -1,4 +1,4 @@
-# NodeumSdk.ApiKeyCollection
+# NodeumApi.ApiKeyCollection
 
 ## Properties
 

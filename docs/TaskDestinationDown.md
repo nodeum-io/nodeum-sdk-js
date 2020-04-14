@@ -1,4 +1,4 @@
-# NodeumSdk.TaskDestinationDown
+# NodeumApi.TaskDestinationDown
 
 ## Properties
 

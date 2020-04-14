@@ -1,4 +1,4 @@
-# NodeumSdk.OnTapesFileCollection
+# NodeumApi.OnTapesFileCollection
 
 ## Properties
 

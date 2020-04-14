@@ -23,7 +23,7 @@ import MountStatus from '../model/MountStatus';
 /**
 * CloudBuckets service.
 * @module api/CloudBucketsApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class CloudBucketsApi {
 

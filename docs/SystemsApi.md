@@ -1,4 +1,4 @@
-# NodeumSdk.SystemsApi
+# NodeumApi.SystemsApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -19,8 +19,8 @@ Creates a YAML file with selected tables and downloads it
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -31,8 +31,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.SystemsApi();
-let resetForm = new NodeumSdk.Reset(); // Reset | 
+let apiInstance = new NodeumApi.SystemsApi();
+let resetForm = new NodeumApi.Reset(); // Reset | 
 apiInstance.downloadResetVars(resetForm, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -74,8 +74,8 @@ Check result of a download traces job.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -86,7 +86,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.SystemsApi();
+let apiInstance = new NodeumApi.SystemsApi();
 let jobId = "jobId_example"; // String | ID of active job
 apiInstance.resultDownloadTraces(jobId, (error, data, response) => {
   if (error) {
@@ -129,8 +129,8 @@ Trigger a download traces request.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -141,7 +141,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.SystemsApi();
+let apiInstance = new NodeumApi.SystemsApi();
 let type = "type_example"; // String | Type of traces to download
 apiInstance.triggerDownloadTraces(type, (error, data, response) => {
   if (error) {

@@ -1,4 +1,4 @@
-# NodeumSdk.TooLongAllOf
+# NodeumApi.TooLongAllOf
 
 ## Properties
 

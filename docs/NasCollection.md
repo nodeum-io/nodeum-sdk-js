@@ -1,4 +1,4 @@
-# NodeumSdk.NasCollection
+# NodeumApi.NasCollection
 
 ## Properties
 

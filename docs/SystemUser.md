@@ -1,4 +1,4 @@
-# NodeumSdk.SystemUser
+# NodeumApi.SystemUser
 
 ## Properties
 

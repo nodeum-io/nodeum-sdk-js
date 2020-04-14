@@ -1,4 +1,4 @@
-# NodeumSdk.CloudBucket
+# NodeumApi.CloudBucket
 
 ## Properties
 

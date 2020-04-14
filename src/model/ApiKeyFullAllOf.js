@@ -17,7 +17,7 @@ import ApiKeyScope from './ApiKeyScope';
 /**
  * The ApiKeyFullAllOf model module.
  * @module model/ApiKeyFullAllOf
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ApiKeyFullAllOf {
     /**

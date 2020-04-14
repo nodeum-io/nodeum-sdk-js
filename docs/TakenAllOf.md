@@ -1,4 +1,4 @@
-# NodeumSdk.TakenAllOf
+# NodeumApi.TakenAllOf
 
 ## Properties
 

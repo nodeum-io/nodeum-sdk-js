@@ -1,4 +1,4 @@
-# NodeumSdk.BySecondaryBucket
+# NodeumApi.BySecondaryBucket
 
 ## Properties
 

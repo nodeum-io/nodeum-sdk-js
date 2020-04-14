@@ -1,4 +1,4 @@
-# NodeumSdk.NodeumFile
+# NodeumApi.NodeumFile
 
 ## Properties
 

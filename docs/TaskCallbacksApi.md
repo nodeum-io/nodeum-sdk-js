@@ -1,4 +1,4 @@
-# NodeumSdk.TaskCallbacksApi
+# NodeumApi.TaskCallbacksApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -23,8 +23,8 @@ Creates a new task callback.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -35,9 +35,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskCallbacksApi();
+let apiInstance = new NodeumApi.TaskCallbacksApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
-let taskCallbackBody = new NodeumSdk.TaskCallback(); // TaskCallback | 
+let taskCallbackBody = new NodeumApi.TaskCallback(); // TaskCallback | 
 apiInstance.createTaskCallback(taskId, taskCallbackBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -80,8 +80,8 @@ Destroys a specific task callback.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -92,7 +92,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskCallbacksApi();
+let apiInstance = new NodeumApi.TaskCallbacksApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskCallbackId = 56; // Number | Numeric ID of task callback.
 apiInstance.destroyTaskCallback(taskId, taskCallbackId, (error, data, response) => {
@@ -137,8 +137,8 @@ Lists all task callbacks.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -149,7 +149,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskCallbacksApi();
+let apiInstance = new NodeumApi.TaskCallbacksApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
@@ -206,8 +206,8 @@ Displays a specific task callback.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -218,7 +218,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskCallbacksApi();
+let apiInstance = new NodeumApi.TaskCallbacksApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskCallbackId = 56; // Number | Numeric ID of task callback.
 apiInstance.showTaskCallback(taskId, taskCallbackId, (error, data, response) => {
@@ -263,8 +263,8 @@ Updates a specific task callback.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -275,10 +275,10 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskCallbacksApi();
+let apiInstance = new NodeumApi.TaskCallbacksApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 let taskCallbackId = 56; // Number | Numeric ID of task callback.
-let taskCallbackBody = new NodeumSdk.TaskCallback(); // TaskCallback | 
+let taskCallbackBody = new NodeumApi.TaskCallback(); // TaskCallback | 
 apiInstance.updateTaskCallback(taskId, taskCallbackId, taskCallbackBody, (error, data, response) => {
   if (error) {
     console.error(error);

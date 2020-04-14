@@ -1,4 +1,4 @@
-# NodeumSdk.TapeCollection
+# NodeumApi.TapeCollection
 
 ## Properties
 

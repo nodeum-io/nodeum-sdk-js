@@ -1,4 +1,4 @@
-# NodeumSdk.TaskDestinationCollection
+# NodeumApi.TaskDestinationCollection
 
 ## Properties
 

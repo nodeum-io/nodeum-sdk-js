@@ -1,4 +1,4 @@
-# NodeumSdk.TaskSchedulesApi
+# NodeumApi.TaskSchedulesApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -23,8 +23,8 @@ Creates a new task schedule. Only one should be created.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -35,9 +35,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSchedulesApi();
+let apiInstance = new NodeumApi.TaskSchedulesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
-let taskScheduleBody = new NodeumSdk.TaskSchedule(); // TaskSchedule | 
+let taskScheduleBody = new NodeumApi.TaskSchedule(); // TaskSchedule | 
 apiInstance.createTaskSchedule(taskId, taskScheduleBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -80,8 +80,8 @@ Destroys the task schedule.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -92,7 +92,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSchedulesApi();
+let apiInstance = new NodeumApi.TaskSchedulesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 apiInstance.destroyTaskSchedule(taskId, (error, data, response) => {
   if (error) {
@@ -135,8 +135,8 @@ Lists all task schedules.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -147,7 +147,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSchedulesApi();
+let apiInstance = new NodeumApi.TaskSchedulesApi();
 let opts = {
   'withNext': true, // Boolean | Display the next scheduled date, and information about missing executions.
   'limit': 56, // Number | The number of items to display for pagination.
@@ -206,8 +206,8 @@ Displays the task schedule.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -218,7 +218,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSchedulesApi();
+let apiInstance = new NodeumApi.TaskSchedulesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
 apiInstance.showTaskSchedule(taskId, (error, data, response) => {
   if (error) {
@@ -261,8 +261,8 @@ Updates the existing task schedule.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -273,9 +273,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.TaskSchedulesApi();
+let apiInstance = new NodeumApi.TaskSchedulesApi();
 let taskId = "taskId_example"; // String | Numeric ID or name of task. Task names are not unique, it's recommanded to use numeric ID.
-let taskScheduleBody = new NodeumSdk.TaskSchedule(); // TaskSchedule | 
+let taskScheduleBody = new NodeumApi.TaskSchedule(); // TaskSchedule | 
 apiInstance.updateTaskSchedule(taskId, taskScheduleBody, (error, data, response) => {
   if (error) {
     console.error(error);

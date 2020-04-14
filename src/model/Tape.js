@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Tape model module.
  * @module model/Tape
- * @version 1.85.0
+ * @version 1.85.1
  */
 class Tape {
     /**

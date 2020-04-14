@@ -1,4 +1,4 @@
-# NodeumSdk.MountCollection
+# NodeumApi.MountCollection
 
 ## Properties
 

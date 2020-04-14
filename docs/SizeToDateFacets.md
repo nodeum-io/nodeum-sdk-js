@@ -1,4 +1,4 @@
-# NodeumSdk.SizeToDateFacets
+# NodeumApi.SizeToDateFacets
 
 ## Properties
 

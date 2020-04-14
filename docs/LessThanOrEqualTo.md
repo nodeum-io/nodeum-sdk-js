@@ -1,4 +1,4 @@
-# NodeumSdk.LessThanOrEqualTo
+# NodeumApi.LessThanOrEqualTo
 
 ## Properties
 

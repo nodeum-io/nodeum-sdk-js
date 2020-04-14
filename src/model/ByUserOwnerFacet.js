@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByUserOwnerFacet model module.
  * @module model/ByUserOwnerFacet
- * @version 1.85.0
+ * @version 1.85.1
  */
 class ByUserOwnerFacet {
     /**

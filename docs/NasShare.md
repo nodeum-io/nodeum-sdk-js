@@ -1,4 +1,4 @@
-# NodeumSdk.NasShare
+# NodeumApi.NasShare
 
 ## Properties
 

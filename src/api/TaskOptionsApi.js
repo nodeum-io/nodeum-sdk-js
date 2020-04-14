@@ -20,7 +20,7 @@ import TaskOptionCollection from '../model/TaskOptionCollection';
 /**
 * TaskOptions service.
 * @module api/TaskOptionsApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class TaskOptionsApi {
 

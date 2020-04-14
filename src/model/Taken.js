@@ -18,7 +18,7 @@ import TakenAllOf from './TakenAllOf';
 /**
  * The Taken model module.
  * @module model/Taken
- * @version 1.85.0
+ * @version 1.85.1
  */
 class Taken {
     /**

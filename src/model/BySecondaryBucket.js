@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The BySecondaryBucket model module.
  * @module model/BySecondaryBucket
- * @version 1.85.0
+ * @version 1.85.1
  */
 class BySecondaryBucket {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CloudConnector model module.
  * @module model/CloudConnector
- * @version 1.85.0
+ * @version 1.85.1
  */
 class CloudConnector {
     /**

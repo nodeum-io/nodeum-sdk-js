@@ -1,4 +1,4 @@
-# NodeumSdk.ActiveJobStatus
+# NodeumApi.ActiveJobStatus
 
 ## Properties
 

@@ -18,7 +18,7 @@ import MountCollection from '../model/MountCollection';
 /**
 * Mounts service.
 * @module api/MountsApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class MountsApi {
 

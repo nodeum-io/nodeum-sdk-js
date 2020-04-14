@@ -1,4 +1,4 @@
-# NodeumSdk.ByPrimaryFacetAllOf
+# NodeumApi.ByPrimaryFacetAllOf
 
 ## Properties
 

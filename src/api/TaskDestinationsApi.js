@@ -21,7 +21,7 @@ import TaskDestinationUp from '../model/TaskDestinationUp';
 /**
 * TaskDestinations service.
 * @module api/TaskDestinationsApi
-* @version 1.85.0
+* @version 1.85.1
 */
 export default class TaskDestinationsApi {
 

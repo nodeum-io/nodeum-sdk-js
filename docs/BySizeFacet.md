@@ -1,4 +1,4 @@
-# NodeumSdk.BySizeFacet
+# NodeumApi.BySizeFacet
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# NodeumSdk.NodeumFileWithPathAllOf
+# NodeumApi.NodeumFileWithPathAllOf
 
 ## Properties
 

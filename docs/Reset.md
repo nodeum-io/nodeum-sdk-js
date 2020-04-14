@@ -1,4 +1,4 @@
-# NodeumSdk.Reset
+# NodeumApi.Reset
 
 ## Properties
 

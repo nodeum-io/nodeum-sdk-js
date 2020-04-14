@@ -17,7 +17,7 @@ import OnTapesFile from './OnTapesFile';
 /**
  * The OnTapesFileCollection model module.
  * @module model/OnTapesFileCollection
- * @version 1.85.0
+ * @version 1.85.1
  */
 class OnTapesFileCollection {
     /**

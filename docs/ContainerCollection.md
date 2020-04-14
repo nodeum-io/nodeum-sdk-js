@@ -1,4 +1,4 @@
-# NodeumSdk.ContainerCollection
+# NodeumApi.ContainerCollection
 
 ## Properties
 

@@ -17,7 +17,7 @@ import BySecondaryTypeFacet from './BySecondaryTypeFacet';
 /**
  * The TypeToSecondaryFacets model module.
  * @module model/TypeToSecondaryFacets
- * @version 1.85.0
+ * @version 1.85.1
  */
 class TypeToSecondaryFacets {
     /**

@@ -1,4 +1,4 @@
-# NodeumSdk.SystemGroupCollection
+# NodeumApi.SystemGroupCollection
 
 ## Properties
 

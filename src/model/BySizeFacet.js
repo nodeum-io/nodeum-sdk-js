@@ -19,7 +19,7 @@ import SizeToDateFacets from './SizeToDateFacets';
 /**
  * The BySizeFacet model module.
  * @module model/BySizeFacet
- * @version 1.85.0
+ * @version 1.85.1
  */
 class BySizeFacet {
     /**

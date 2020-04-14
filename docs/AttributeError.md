@@ -1,4 +1,4 @@
-# NodeumSdk.AttributeError
+# NodeumApi.AttributeError
 
 ## Properties
 

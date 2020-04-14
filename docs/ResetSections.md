@@ -1,4 +1,4 @@
-# NodeumSdk.ResetSections
+# NodeumApi.ResetSections
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# NodeumSdk.CloudConnectorsApi
+# NodeumApi.CloudConnectorsApi
 
 All URIs are relative to *http://localhost/api/v2*
 
@@ -25,8 +25,8 @@ Creates a new cloud connector.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -37,8 +37,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
-let cloudConnectorBody = new NodeumSdk.CloudConnector(); // CloudConnector | 
+let apiInstance = new NodeumApi.CloudConnectorsApi();
+let cloudConnectorBody = new NodeumApi.CloudConnector(); // CloudConnector | 
 apiInstance.createCloudConnector(cloudConnectorBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -80,8 +80,8 @@ Destroys a specific cloud connector.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -92,7 +92,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
+let apiInstance = new NodeumApi.CloudConnectorsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 apiInstance.destroyCloudConnector(cloudConnectorId, (error, data, response) => {
   if (error) {
@@ -135,8 +135,8 @@ Lists all cloud connectors.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -147,7 +147,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
+let apiInstance = new NodeumApi.CloudConnectorsApi();
 let opts = {
   'limit': 56, // Number | The number of items to display for pagination.
   'offset': 56, // Number | The number of items to skip for pagination.
@@ -210,8 +210,8 @@ Displays a specific cloud connector.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -222,7 +222,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
+let apiInstance = new NodeumApi.CloudConnectorsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
 apiInstance.showCloudConnector(cloudConnectorId, (error, data, response) => {
   if (error) {
@@ -265,8 +265,8 @@ Test an unsaved cloud connector.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -277,8 +277,8 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
-let cloudConnectorBody = new NodeumSdk.CloudConnector(); // CloudConnector | 
+let apiInstance = new NodeumApi.CloudConnectorsApi();
+let cloudConnectorBody = new NodeumApi.CloudConnector(); // CloudConnector | 
 apiInstance.testCloudConnector(cloudConnectorBody, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -320,8 +320,8 @@ Check result of cloud connector test job.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -332,7 +332,7 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
+let apiInstance = new NodeumApi.CloudConnectorsApi();
 let jobId = "jobId_example"; // String | ID of active job
 apiInstance.testResultCloudConnector(jobId, (error, data, response) => {
   if (error) {
@@ -375,8 +375,8 @@ Updates a specific cloud connector.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum_sdk';
-let defaultClient = NodeumSdk.ApiClient.instance;
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
 BasicAuth.username = 'YOUR USERNAME';
@@ -387,9 +387,9 @@ BearerAuth.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //BearerAuth.apiKeyPrefix = 'Token';
 
-let apiInstance = new NodeumSdk.CloudConnectorsApi();
+let apiInstance = new NodeumApi.CloudConnectorsApi();
 let cloudConnectorId = "cloudConnectorId_example"; // String | Numeric ID or name of cloud connector.
-let cloudConnectorBody = new NodeumSdk.CloudConnector(); // CloudConnector | 
+let cloudConnectorBody = new NodeumApi.CloudConnector(); // CloudConnector | 
 apiInstance.updateCloudConnector(cloudConnectorId, cloudConnectorBody, (error, data, response) => {
   if (error) {
     console.error(error);
