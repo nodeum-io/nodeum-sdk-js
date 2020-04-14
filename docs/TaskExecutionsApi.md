@@ -22,7 +22,7 @@ Lists all task executions.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -125,7 +125,7 @@ Lists all task executions.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -222,7 +222,7 @@ Displays a specific task execution.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -277,7 +277,7 @@ Displays a specific task execution.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];

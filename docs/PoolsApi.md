@@ -31,7 +31,7 @@ Creates a new pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -86,7 +86,7 @@ Set a new primary pool scan option.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -143,7 +143,7 @@ Destroys a specific tape pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -198,7 +198,7 @@ Disable the primary pool scan.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -253,7 +253,7 @@ Lists all pools.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -326,7 +326,7 @@ Mount Pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -381,7 +381,7 @@ Get mount status of Pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -436,7 +436,7 @@ Displays a specific pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -491,7 +491,7 @@ Displays the primary pool scan status.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -546,7 +546,7 @@ Synchronize a primary after a scan (for internal use only).
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -603,7 +603,7 @@ Unmount Pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -658,7 +658,7 @@ Updates a specific pool.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -715,7 +715,7 @@ Updates the existing primary pool scan option.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];

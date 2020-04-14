@@ -1,6 +1,6 @@
-# nodeum-sdk
+# nodeum_sdk
 
-NodeumSdk - JavaScript client for nodeum-sdk
+NodeumSdk - JavaScript client for nodeum_sdk
 The Nodeum API makes it easy to tap into the digital data mesh that runs across your organisation. Make requests to our API endpoints and we’ll give you everything you need to interconnect your business workflows with your storage.
 
 All production API requests are made to:
@@ -65,7 +65,7 @@ To publish the library as a [npm](https://www.npmjs.com/), please follow the pro
 Then install it via:
 
 ```shell
-npm install nodeum-sdk --save
+npm install nodeum_sdk --save
 ```
 
 Finally, you need to build the module:
@@ -88,7 +88,7 @@ Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the follow
 npm link
 ```
 
-To use the link you just defined in your project, switch to the directory you want to use your nodeum-sdk from, and run:
+To use the link you just defined in your project, switch to the directory you want to use your nodeum_sdk from, and run:
 
 ```shell
 npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
@@ -144,7 +144,7 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var NodeumSdk = require('nodeum-sdk');
+var NodeumSdk = require('nodeum_sdk');
 
 var defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth

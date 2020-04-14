@@ -28,7 +28,7 @@ It **does not** yet create the file structure and configure the samba connection
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -83,7 +83,7 @@ Creates a new privilege on the container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -140,7 +140,7 @@ Destroys a specific container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -195,7 +195,7 @@ Destroys a specific privilege.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -252,7 +252,7 @@ Lists all privilege on the container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -323,7 +323,7 @@ Lists all containers.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -404,7 +404,7 @@ Displays a specific container.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -459,7 +459,7 @@ Displays a specific privilege.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -516,7 +516,7 @@ It **does not** yet create the file structure and configure the samba connection
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -573,7 +573,7 @@ Updates a specific privilege.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];

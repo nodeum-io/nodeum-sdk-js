@@ -31,7 +31,7 @@ List all tape statistics.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -90,7 +90,7 @@ Lists all tapes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -201,7 +201,7 @@ Lists all tapes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -312,7 +312,7 @@ Lists all tapes.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -423,7 +423,7 @@ Get mount status of Tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -478,7 +478,7 @@ Get mount status of Tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -535,7 +535,7 @@ Get mount status of Tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -592,7 +592,7 @@ Displays a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -647,7 +647,7 @@ Displays a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -704,7 +704,7 @@ Displays a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -761,7 +761,7 @@ Display statistic for a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -816,7 +816,7 @@ Display statistic for a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -873,7 +873,7 @@ Display statistic for a specific tape.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];

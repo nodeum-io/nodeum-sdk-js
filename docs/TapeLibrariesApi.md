@@ -24,7 +24,7 @@ Creates a new tape library.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -79,7 +79,7 @@ Destroys a specific tape library.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -134,7 +134,7 @@ Lists all tape libraries.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -229,7 +229,7 @@ Lists tape libraries devices.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -284,7 +284,7 @@ Displays a specific tape library.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
@@ -339,7 +339,7 @@ Updates a specific tape library.
 ### Example
 
 ```javascript
-import NodeumSdk from 'nodeum-sdk';
+import NodeumSdk from 'nodeum_sdk';
 let defaultClient = NodeumSdk.ApiClient.instance;
 // Configure HTTP basic authorization: BasicAuth
 let BasicAuth = defaultClient.authentications['BasicAuth'];
