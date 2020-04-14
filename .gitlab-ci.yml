@@ -1,5 +1,5 @@
 variables:
-  PACKAGE_NAME: nodeum-sdk
+  PACKAGE_NAME: nodeum_api
 
 include:
   - local: .gitlab/ci/generate.gitlab-ci.yml
