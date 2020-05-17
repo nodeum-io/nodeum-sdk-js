@@ -21,7 +21,7 @@ import TaskSourceUp from '../model/TaskSourceUp';
 /**
 * TaskSources service.
 * @module api/TaskSourcesApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class TaskSourcesApi {
 

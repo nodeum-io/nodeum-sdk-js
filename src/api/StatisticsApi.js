@@ -13,17 +13,28 @@
 
 
 import ApiClient from "../ApiClient";
+import ByDateFacet from '../model/ByDateFacet';
 import ByFileExtensionFacet from '../model/ByFileExtensionFacet';
 import ByGroupOwnerFacet from '../model/ByGroupOwnerFacet';
+import ByPrimaryCloudFacet from '../model/ByPrimaryCloudFacet';
 import ByPrimaryFacet from '../model/ByPrimaryFacet';
-import BySecondaryFacet from '../model/BySecondaryFacet';
+import ByPrimaryNasFacet from '../model/ByPrimaryNasFacet';
+import ByPrimaryStorageFacet from '../model/ByPrimaryStorageFacet';
+import BySecondaryCloudFacet from '../model/BySecondaryCloudFacet';
+import BySecondaryNasFacet from '../model/BySecondaryNasFacet';
+import BySecondaryStorageFacet from '../model/BySecondaryStorageFacet';
+import BySecondaryTapeFacet from '../model/BySecondaryTapeFacet';
 import BySizeFacet from '../model/BySizeFacet';
+import ByTaskStatusFacet from '../model/ByTaskStatusFacet';
+import ByTaskStorageFacet from '../model/ByTaskStorageFacet';
+import ByTaskWorkflowFacet from '../model/ByTaskWorkflowFacet';
 import ByUserOwnerFacet from '../model/ByUserOwnerFacet';
+import StorageFacet from '../model/StorageFacet';
 
 /**
 * Statistics service.
 * @module api/StatisticsApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class StatisticsApi {
 
@@ -40,6 +51,51 @@ export default class StatisticsApi {
 
 
     /**
+     * Callback function to receive the result of the statisticsByDate operation.
+     * @callback module:api/StatisticsApi~statisticsByDateCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByDateFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by date
+     * **API Key Scope**: statistics / by_date
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:api/StatisticsApi~statisticsByDateCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByDateFacet}
+     */
+    statisticsByDate(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByDateFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_date', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the statisticsByFileExtension operation.
      * @callback module:api/StatisticsApi~statisticsByFileExtensionCallback
      * @param {String} error Error message, if any.
@@ -48,11 +104,14 @@ export default class StatisticsApi {
      */
 
     /**
-     * TODO
+     * Get statistics about files, grouped by file extension
      * **API Key Scope**: statistics / by_file_extension
      * @param {Object} opts Optional parameters
      * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
      * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
      * @param {module:api/StatisticsApi~statisticsByFileExtensionCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ByFileExtensionFacet}
      */
@@ -64,7 +123,10 @@ export default class StatisticsApi {
       };
       let queryParams = {
         'q': opts['q'],
-        'date_attr': opts['dateAttr']
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
       };
       let headerParams = {
       };
@@ -91,11 +153,14 @@ export default class StatisticsApi {
      */
 
     /**
-     * TODO
+     * Get statistics about files, grouped by owner (group)
      * **API Key Scope**: statistics / by_group_owner
      * @param {Object} opts Optional parameters
      * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
      * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
      * @param {module:api/StatisticsApi~statisticsByGroupOwnerCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ByGroupOwnerFacet}
      */
@@ -107,7 +172,10 @@ export default class StatisticsApi {
       };
       let queryParams = {
         'q': opts['q'],
-        'date_attr': opts['dateAttr']
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
       };
       let headerParams = {
       };
@@ -126,6 +194,55 @@ export default class StatisticsApi {
     }
 
     /**
+     * Callback function to receive the result of the statisticsByPrimaryCloud operation.
+     * @callback module:api/StatisticsApi~statisticsByPrimaryCloudCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByPrimaryCloudFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by primary Cloud
+     * **API Key Scope**: statistics / by_primary_cloud
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsByPrimaryCloudCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByPrimaryCloudFacet}
+     */
+    statisticsByPrimaryCloud(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByPrimaryCloudFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_primary_cloud', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the statisticsByPrimaryName operation.
      * @callback module:api/StatisticsApi~statisticsByPrimaryNameCallback
      * @param {String} error Error message, if any.
@@ -134,11 +251,14 @@ export default class StatisticsApi {
      */
 
     /**
-     * TODO
+     * Get statistics about files, grouped by primary storages
      * **API Key Scope**: statistics / by_primary_name
      * @param {Object} opts Optional parameters
      * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
      * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
      * @param {module:api/StatisticsApi~statisticsByPrimaryNameCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ByPrimaryFacet}
      */
@@ -150,7 +270,10 @@ export default class StatisticsApi {
       };
       let queryParams = {
         'q': opts['q'],
-        'date_attr': opts['dateAttr']
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
       };
       let headerParams = {
       };
@@ -169,23 +292,26 @@ export default class StatisticsApi {
     }
 
     /**
-     * Callback function to receive the result of the statisticsBySecondaryStorage operation.
-     * @callback module:api/StatisticsApi~statisticsBySecondaryStorageCallback
+     * Callback function to receive the result of the statisticsByPrimaryNas operation.
+     * @callback module:api/StatisticsApi~statisticsByPrimaryNasCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/BySecondaryFacet} data The data returned by the service call.
+     * @param {module:model/ByPrimaryNasFacet} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * TODO
-     * **API Key Scope**: statistics / by_secondary_storage
+     * Get statistics about files, grouped by primary NAS
+     * **API Key Scope**: statistics / by_primary_nas
      * @param {Object} opts Optional parameters
      * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
      * @param {module:model/String} opts.dateAttr Type of date to facet on
-     * @param {module:api/StatisticsApi~statisticsBySecondaryStorageCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/BySecondaryFacet}
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsByPrimaryNasCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByPrimaryNasFacet}
      */
-    statisticsBySecondaryStorage(opts, callback) {
+    statisticsByPrimaryNas(opts, callback) {
       opts = opts || {};
       let postBody = null;
 
@@ -193,7 +319,10 @@ export default class StatisticsApi {
       };
       let queryParams = {
         'q': opts['q'],
-        'date_attr': opts['dateAttr']
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
       };
       let headerParams = {
       };
@@ -203,9 +332,254 @@ export default class StatisticsApi {
       let authNames = ['BasicAuth', 'BearerAuth'];
       let contentTypes = [];
       let accepts = ['application/json'];
-      let returnType = BySecondaryFacet;
+      let returnType = ByPrimaryNasFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_primary_nas', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsByPrimaryStorage operation.
+     * @callback module:api/StatisticsApi~statisticsByPrimaryStorageCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByPrimaryStorageFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by primary storage
+     * **API Key Scope**: statistics / by_primary_storage
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsByPrimaryStorageCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByPrimaryStorageFacet}
+     */
+    statisticsByPrimaryStorage(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByPrimaryStorageFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_primary_storage', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsBySecondaryCloud operation.
+     * @callback module:api/StatisticsApi~statisticsBySecondaryCloudCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/BySecondaryCloudFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by secondary Cloud
+     * **API Key Scope**: statistics / by_secondary_cloud
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsBySecondaryCloudCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/BySecondaryCloudFacet}
+     */
+    statisticsBySecondaryCloud(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = BySecondaryCloudFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_secondary_cloud', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsBySecondaryNas operation.
+     * @callback module:api/StatisticsApi~statisticsBySecondaryNasCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/BySecondaryNasFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by secondary NAS
+     * **API Key Scope**: statistics / by_secondary_nas
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsBySecondaryNasCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/BySecondaryNasFacet}
+     */
+    statisticsBySecondaryNas(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = BySecondaryNasFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_secondary_nas', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsBySecondaryStorage operation.
+     * @callback module:api/StatisticsApi~statisticsBySecondaryStorageCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/BySecondaryStorageFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by secondary storage
+     * **API Key Scope**: statistics / by_secondary_storage
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsBySecondaryStorageCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/BySecondaryStorageFacet}
+     */
+    statisticsBySecondaryStorage(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = BySecondaryStorageFacet;
       return this.apiClient.callApi(
         '/statistics/by_secondary_storage', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsBySecondaryTape operation.
+     * @callback module:api/StatisticsApi~statisticsBySecondaryTapeCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/BySecondaryTapeFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by secondary Tape
+     * **API Key Scope**: statistics / by_secondary_tape
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsBySecondaryTapeCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/BySecondaryTapeFacet}
+     */
+    statisticsBySecondaryTape(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = BySecondaryTapeFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_secondary_tape', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -220,10 +594,11 @@ export default class StatisticsApi {
      */
 
     /**
-     * TODO
+     * Get statistics about files, grouped by size
      * **API Key Scope**: statistics / by_size
      * @param {Object} opts Optional parameters
      * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
      * @param {module:model/String} opts.dateAttr Type of date to facet on
      * @param {module:api/StatisticsApi~statisticsBySizeCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/BySizeFacet}
@@ -236,6 +611,7 @@ export default class StatisticsApi {
       };
       let queryParams = {
         'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
         'date_attr': opts['dateAttr']
       };
       let headerParams = {
@@ -263,11 +639,14 @@ export default class StatisticsApi {
      */
 
     /**
-     * TODO
+     * Get statistics about files, grouped by owner (user)
      * **API Key Scope**: statistics / by_user_owner
      * @param {Object} opts Optional parameters
      * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
      * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
      * @param {module:api/StatisticsApi~statisticsByUserOwnerCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/ByUserOwnerFacet}
      */
@@ -279,7 +658,10 @@ export default class StatisticsApi {
       };
       let queryParams = {
         'q': opts['q'],
-        'date_attr': opts['dateAttr']
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
       };
       let headerParams = {
       };
@@ -292,6 +674,178 @@ export default class StatisticsApi {
       let returnType = ByUserOwnerFacet;
       return this.apiClient.callApi(
         '/statistics/by_user_owner', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsStorage operation.
+     * @callback module:api/StatisticsApi~statisticsStorageCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/StorageFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about storages, grouped by types
+     * **API Key Scope**: statistics / storages
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:api/StatisticsApi~statisticsStorageCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/StorageFacet}
+     */
+    statisticsStorage(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = StorageFacet;
+      return this.apiClient.callApi(
+        '/statistics/storage', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsTaskByStatus operation.
+     * @callback module:api/StatisticsApi~statisticsTaskByStatusCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByTaskStatusFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about tasks executions, grouped by status
+     * **API Key Scope**: statistics / task_by_status
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:api/StatisticsApi~statisticsTaskByStatusCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByTaskStatusFacet}
+     */
+    statisticsTaskByStatus(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByTaskStatusFacet;
+      return this.apiClient.callApi(
+        '/statistics/task_by_status', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsTaskByStorage operation.
+     * @callback module:api/StatisticsApi~statisticsTaskByStorageCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByTaskStorageFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about tasks executions, grouped by source and destination
+     * **API Key Scope**: statistics / task_by_storage
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:api/StatisticsApi~statisticsTaskByStorageCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByTaskStorageFacet}
+     */
+    statisticsTaskByStorage(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByTaskStorageFacet;
+      return this.apiClient.callApi(
+        '/statistics/task_by_storage', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsTaskByWorkflow operation.
+     * @callback module:api/StatisticsApi~statisticsTaskByWorkflowCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByTaskWorkflowFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about tasks executions, grouped by workflow
+     * **API Key Scope**: statistics / task_by_workflow
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:api/StatisticsApi~statisticsTaskByWorkflowCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByTaskWorkflowFacet}
+     */
+    statisticsTaskByWorkflow(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe')
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByTaskWorkflowFacet;
+      return this.apiClient.callApi(
+        '/statistics/task_by_workflow', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByPrimaryFacetAllOf model module.
  * @module model/ByPrimaryFacetAllOf
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByPrimaryFacetAllOf {
     /**
@@ -48,8 +48,8 @@ class ByPrimaryFacetAllOf {
         if (data) {
             obj = obj || new ByPrimaryFacetAllOf();
 
-            if (data.hasOwnProperty('primary_name')) {
-                obj['primary_name'] = ByDateFacetBuckets.constructFromObject(data['primary_name']);
+            if (data.hasOwnProperty('prim_name_s')) {
+                obj['prim_name_s'] = ByDateFacetBuckets.constructFromObject(data['prim_name_s']);
             }
         }
         return obj;
@@ -59,9 +59,9 @@ class ByPrimaryFacetAllOf {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} primary_name
+ * @member {module:model/ByDateFacetBuckets} prim_name_s
  */
-ByPrimaryFacetAllOf.prototype['primary_name'] = undefined;
+ByPrimaryFacetAllOf.prototype['prim_name_s'] = undefined;
 
 
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Container model module.
  * @module model/Container
- * @version 1.85.1
+ * @version 1.86.0
  */
 class Container {
     /**
@@ -65,11 +65,17 @@ class Container {
             if (data.hasOwnProperty('stat_total_files')) {
                 obj['stat_total_files'] = ApiClient.convertToType(data['stat_total_files'], 'Number');
             }
+            if (data.hasOwnProperty('only_on_cache_file_count')) {
+                obj['only_on_cache_file_count'] = ApiClient.convertToType(data['only_on_cache_file_count'], 'Number');
+            }
             if (data.hasOwnProperty('stat_total_size')) {
                 obj['stat_total_size'] = ApiClient.convertToType(data['stat_total_size'], 'Number');
             }
             if (data.hasOwnProperty('stat_size_on_cache')) {
                 obj['stat_size_on_cache'] = ApiClient.convertToType(data['stat_size_on_cache'], 'Number');
+            }
+            if (data.hasOwnProperty('only_on_cache_file_size_sum')) {
+                obj['only_on_cache_file_size_sum'] = ApiClient.convertToType(data['only_on_cache_file_size_sum'], 'Number');
             }
             if (data.hasOwnProperty('guest_right')) {
                 obj['guest_right'] = ApiClient.convertToType(data['guest_right'], 'String');
@@ -115,6 +121,11 @@ Container.prototype['quota_on_cache'] = undefined;
 Container.prototype['stat_total_files'] = undefined;
 
 /**
+ * @member {Number} only_on_cache_file_count
+ */
+Container.prototype['only_on_cache_file_count'] = undefined;
+
+/**
  * @member {Number} stat_total_size
  */
 Container.prototype['stat_total_size'] = undefined;
@@ -123,6 +134,11 @@ Container.prototype['stat_total_size'] = undefined;
  * @member {Number} stat_size_on_cache
  */
 Container.prototype['stat_size_on_cache'] = undefined;
+
+/**
+ * @member {Number} only_on_cache_file_size_sum
+ */
+Container.prototype['only_on_cache_file_size_sum'] = undefined;
 
 /**
  * @member {module:model/Container.GuestRightEnum} guest_right

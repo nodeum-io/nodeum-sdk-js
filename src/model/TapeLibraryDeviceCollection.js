@@ -17,7 +17,7 @@ import TapeLibraryDevice from './TapeLibraryDevice';
 /**
  * The TapeLibraryDeviceCollection model module.
  * @module model/TapeLibraryDeviceCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TapeLibraryDeviceCollection {
     /**

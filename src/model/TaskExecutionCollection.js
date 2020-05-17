@@ -17,7 +17,7 @@ import TaskExecution from './TaskExecution';
 /**
  * The TaskExecutionCollection model module.
  * @module model/TaskExecutionCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TaskExecutionCollection {
     /**

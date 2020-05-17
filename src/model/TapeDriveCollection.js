@@ -17,7 +17,7 @@ import TapeDrive from './TapeDrive';
 /**
  * The TapeDriveCollection model module.
  * @module model/TapeDriveCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TapeDriveCollection {
     /**

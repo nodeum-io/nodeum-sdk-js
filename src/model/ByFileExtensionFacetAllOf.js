@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByFileExtensionFacetAllOf model module.
  * @module model/ByFileExtensionFacetAllOf
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByFileExtensionFacetAllOf {
     /**
@@ -48,8 +48,8 @@ class ByFileExtensionFacetAllOf {
         if (data) {
             obj = obj || new ByFileExtensionFacetAllOf();
 
-            if (data.hasOwnProperty('file_extension')) {
-                obj['file_extension'] = ByDateFacetBuckets.constructFromObject(data['file_extension']);
+            if (data.hasOwnProperty('file_extension_s')) {
+                obj['file_extension_s'] = ByDateFacetBuckets.constructFromObject(data['file_extension_s']);
             }
         }
         return obj;
@@ -59,9 +59,9 @@ class ByFileExtensionFacetAllOf {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} file_extension
+ * @member {module:model/ByDateFacetBuckets} file_extension_s
  */
-ByFileExtensionFacetAllOf.prototype['file_extension'] = undefined;
+ByFileExtensionFacetAllOf.prototype['file_extension_s'] = undefined;
 
 
 

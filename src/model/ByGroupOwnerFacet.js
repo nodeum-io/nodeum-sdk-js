@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByGroupOwnerFacet model module.
  * @module model/ByGroupOwnerFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByGroupOwnerFacet {
     /**
@@ -56,8 +56,8 @@ class ByGroupOwnerFacet {
             FileFacet.constructFromObject(data, obj);
             ByGroupOwnerFacetAllOf.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('group_owner_id')) {
-                obj['group_owner_id'] = ByDateFacetBuckets.constructFromObject(data['group_owner_id']);
+            if (data.hasOwnProperty('group_owner_id_l')) {
+                obj['group_owner_id_l'] = ByDateFacetBuckets.constructFromObject(data['group_owner_id_l']);
             }
         }
         return obj;
@@ -67,9 +67,9 @@ class ByGroupOwnerFacet {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} group_owner_id
+ * @member {module:model/ByDateFacetBuckets} group_owner_id_l
  */
-ByGroupOwnerFacet.prototype['group_owner_id'] = undefined;
+ByGroupOwnerFacet.prototype['group_owner_id_l'] = undefined;
 
 
 // Implement FileFacet interface:
@@ -78,14 +78,22 @@ ByGroupOwnerFacet.prototype['group_owner_id'] = undefined;
  */
 FileFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+FileFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 FileFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+FileFacet.prototype['cost'] = undefined;
 // Implement ByGroupOwnerFacetAllOf interface:
 /**
- * @member {module:model/ByDateFacetBuckets} group_owner_id
+ * @member {module:model/ByDateFacetBuckets} group_owner_id_l
  */
-ByGroupOwnerFacetAllOf.prototype['group_owner_id'] = undefined;
+ByGroupOwnerFacetAllOf.prototype['group_owner_id_l'] = undefined;
 
 
 

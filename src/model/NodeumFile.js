@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NodeumFile model module.
  * @module model/NodeumFile
- * @version 1.85.1
+ * @version 1.86.0
  */
 class NodeumFile {
     /**

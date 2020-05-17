@@ -18,7 +18,7 @@ import OccurrenceLessThanAllOf from './OccurrenceLessThanAllOf';
 /**
  * The OccurrenceLessThan model module.
  * @module model/OccurrenceLessThan
- * @version 1.85.1
+ * @version 1.86.0
  */
 class OccurrenceLessThan {
     /**

@@ -17,7 +17,7 @@ import Pool from './Pool';
 /**
  * The PoolCollection model module.
  * @module model/PoolCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class PoolCollection {
     /**

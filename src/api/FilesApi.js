@@ -24,7 +24,7 @@ import TapeCollection from '../model/TapeCollection';
 /**
 * Files service.
 * @module api/FilesApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class FilesApi {
 

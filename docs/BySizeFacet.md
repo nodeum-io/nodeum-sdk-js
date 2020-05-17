@@ -5,7 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | [optional] 
+**filesCount** | **Number** |  | [optional] 
 **fileSizeSum** | **Number** |  | [optional] 
+**cost** | **Number** |  | [optional] 
 **less100Kb** | [**ByDateFacet**](ByDateFacet.md) |  | [optional] 
 **less1Mb** | [**ByDateFacet**](ByDateFacet.md) |  | [optional] 
 **less10Mb** | [**ByDateFacet**](ByDateFacet.md) |  | [optional] 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The MountInfo model module.
  * @module model/MountInfo
- * @version 1.85.1
+ * @version 1.86.0
  */
 class MountInfo {
     /**

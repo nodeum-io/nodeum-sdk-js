@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ContainerPrivilege model module.
  * @module model/ContainerPrivilege
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ContainerPrivilege {
     /**

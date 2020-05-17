@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The PrimaryScan model module.
  * @module model/PrimaryScan
- * @version 1.85.1
+ * @version 1.86.0
  */
 class PrimaryScan {
     /**

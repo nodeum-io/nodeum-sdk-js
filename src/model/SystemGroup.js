@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The SystemGroup model module.
  * @module model/SystemGroup
- * @version 1.85.1
+ * @version 1.86.0
  */
 class SystemGroup {
     /**

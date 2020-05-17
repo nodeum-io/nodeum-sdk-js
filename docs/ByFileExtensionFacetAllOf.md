@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**fileExtension** | [**ByDateFacetBuckets**](ByDateFacetBuckets.md) |  | [optional] 
+**fileExtensionS** | [**ByDateFacetBuckets**](ByDateFacetBuckets.md) |  | [optional] 
 
 

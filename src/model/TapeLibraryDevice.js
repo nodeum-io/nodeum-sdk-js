@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TapeLibraryDevice model module.
  * @module model/TapeLibraryDevice
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TapeLibraryDevice {
     /**

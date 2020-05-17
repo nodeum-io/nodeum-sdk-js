@@ -17,11 +17,13 @@ import ApiKeyCollection from '../model/ApiKeyCollection';
 import ApiKeyFull from '../model/ApiKeyFull';
 import SystemGroupCollection from '../model/SystemGroupCollection';
 import SystemUserCollection from '../model/SystemUserCollection';
+import UserConfiguration from '../model/UserConfiguration';
+import UserConfigurationCollection from '../model/UserConfigurationCollection';
 
 /**
 * Users service.
 * @module api/UsersApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class UsersApi {
 
@@ -80,6 +82,48 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the createConfiguration operation.
+     * @callback module:api/UsersApi~createConfigurationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserConfiguration} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Creates a new configuration value for current user.
+     * **API Key Scope**: configurations / create
+     * @param {module:model/UserConfiguration} configurationBody 
+     * @param {module:api/UsersApi~createConfigurationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserConfiguration}
+     */
+    createConfiguration(configurationBody, callback) {
+      let postBody = configurationBody;
+      // verify the required parameter 'configurationBody' is set
+      if (configurationBody === undefined || configurationBody === null) {
+        throw new Error("Missing the required parameter 'configurationBody' when calling createConfiguration");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = UserConfiguration;
+      return this.apiClient.callApi(
+        '/users/me/configurations', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the destroyApiKey operation.
      * @callback module:api/UsersApi~destroyApiKeyCallback
      * @param {String} error Error message, if any.
@@ -116,6 +160,48 @@ export default class UsersApi {
       let returnType = null;
       return this.apiClient.callApi(
         '/users/me/api_keys/{api_key_id}', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the destroyConfiguration operation.
+     * @callback module:api/UsersApi~destroyConfigurationCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Destroys a specific configuration value.
+     * **API Key Scope**: configurations / destroy
+     * @param {String} configurationId Numeric ID, or key of configuration.
+     * @param {module:api/UsersApi~destroyConfigurationCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    destroyConfiguration(configurationId, callback) {
+      let postBody = null;
+      // verify the required parameter 'configurationId' is set
+      if (configurationId === undefined || configurationId === null) {
+        throw new Error("Missing the required parameter 'configurationId' when calling destroyConfiguration");
+      }
+
+      let pathParams = {
+        'configuration_id': configurationId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = [];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/users/me/configurations/{configuration_id}', 'DELETE',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -159,6 +245,49 @@ export default class UsersApi {
       let returnType = ApiKeyCollection;
       return this.apiClient.callApi(
         '/users/me/api_keys', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the indexConfigurations operation.
+     * @callback module:api/UsersApi~indexConfigurationsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserConfigurationCollection} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Lists all configurations of current user.
+     * **API Key Scope**: configurations / index
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.limit The number of items to display for pagination.
+     * @param {Number} opts.offset The number of items to skip for pagination.
+     * @param {module:api/UsersApi~indexConfigurationsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserConfigurationCollection}
+     */
+    indexConfigurations(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'limit': opts['limit'],
+        'offset': opts['offset']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = UserConfigurationCollection;
+      return this.apiClient.callApi(
+        '/users/me/configurations', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -282,6 +411,49 @@ export default class UsersApi {
     }
 
     /**
+     * Callback function to receive the result of the showConfiguration operation.
+     * @callback module:api/UsersApi~showConfigurationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserConfiguration} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Displays a specific configuration value.
+     * **API Key Scope**: configurations / show
+     * @param {String} configurationId Numeric ID, or key of configuration.
+     * @param {module:api/UsersApi~showConfigurationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserConfiguration}
+     */
+    showConfiguration(configurationId, callback) {
+      let postBody = null;
+      // verify the required parameter 'configurationId' is set
+      if (configurationId === undefined || configurationId === null) {
+        throw new Error("Missing the required parameter 'configurationId' when calling showConfiguration");
+      }
+
+      let pathParams = {
+        'configuration_id': configurationId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = UserConfiguration;
+      return this.apiClient.callApi(
+        '/users/me/configurations/{configuration_id}', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the updateApiKey operation.
      * @callback module:api/UsersApi~updateApiKeyCallback
      * @param {String} error Error message, if any.
@@ -324,6 +496,54 @@ export default class UsersApi {
       let returnType = ApiKeyFull;
       return this.apiClient.callApi(
         '/users/me/api_keys/{api_key_id}', 'PUT',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the updateConfiguration operation.
+     * @callback module:api/UsersApi~updateConfigurationCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/UserConfiguration} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Updates a specific configuration value.
+     * **API Key Scope**: configurations / update
+     * @param {String} configurationId Numeric ID, or key of configuration.
+     * @param {module:model/UserConfiguration} configurationBody 
+     * @param {module:api/UsersApi~updateConfigurationCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/UserConfiguration}
+     */
+    updateConfiguration(configurationId, configurationBody, callback) {
+      let postBody = configurationBody;
+      // verify the required parameter 'configurationId' is set
+      if (configurationId === undefined || configurationId === null) {
+        throw new Error("Missing the required parameter 'configurationId' when calling updateConfiguration");
+      }
+      // verify the required parameter 'configurationBody' is set
+      if (configurationBody === undefined || configurationBody === null) {
+        throw new Error("Missing the required parameter 'configurationBody' when calling updateConfiguration");
+      }
+
+      let pathParams = {
+        'configuration_id': configurationId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = ['application/json'];
+      let accepts = ['application/json'];
+      let returnType = UserConfiguration;
+      return this.apiClient.callApi(
+        '/users/me/configurations/{configuration_id}', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

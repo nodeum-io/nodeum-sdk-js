@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByDateFacetBucket model module.
  * @module model/ByDateFacetBucket
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByDateFacetBucket {
     /**
@@ -83,9 +83,17 @@ ByDateFacetBucketAllOf.prototype['val'] = undefined;
  */
 ByDateFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+ByDateFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 ByDateFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+ByDateFacet.prototype['cost'] = undefined;
 /**
  * @member {module:model/FileFacet} in_cache
  */

@@ -17,7 +17,7 @@ import ResetSections from './ResetSections';
 /**
  * The Reset model module.
  * @module model/Reset
- * @version 1.85.1
+ * @version 1.86.0
  */
 class Reset {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ResetSections model module.
  * @module model/ResetSections
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ResetSections {
     /**

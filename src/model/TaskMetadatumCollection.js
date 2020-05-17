@@ -17,7 +17,7 @@ import TaskMetadatum from './TaskMetadatum';
 /**
  * The TaskMetadatumCollection model module.
  * @module model/TaskMetadatumCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TaskMetadatumCollection {
     /**

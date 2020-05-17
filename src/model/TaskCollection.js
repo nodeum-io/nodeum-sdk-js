@@ -17,7 +17,7 @@ import Task from './Task';
 /**
  * The TaskCollection model module.
  * @module model/TaskCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TaskCollection {
     /**

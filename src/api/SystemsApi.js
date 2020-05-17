@@ -19,7 +19,7 @@ import Reset from '../model/Reset';
 /**
 * Systems service.
 * @module api/SystemsApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class SystemsApi {
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TooLongAllOf model module.
  * @module model/TooLongAllOf
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TooLongAllOf {
     /**

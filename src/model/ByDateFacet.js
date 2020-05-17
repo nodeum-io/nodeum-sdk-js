@@ -18,7 +18,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByDateFacet model module.
  * @module model/ByDateFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByDateFacet {
     /**
@@ -56,8 +56,14 @@ class ByDateFacet {
             if (data.hasOwnProperty('count')) {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
+            if (data.hasOwnProperty('files_count')) {
+                obj['files_count'] = ApiClient.convertToType(data['files_count'], 'Number');
+            }
             if (data.hasOwnProperty('file_size_sum')) {
                 obj['file_size_sum'] = ApiClient.convertToType(data['file_size_sum'], 'Number');
+            }
+            if (data.hasOwnProperty('cost')) {
+                obj['cost'] = ApiClient.convertToType(data['cost'], 'Number');
             }
             if (data.hasOwnProperty('in_cache')) {
                 obj['in_cache'] = FileFacet.constructFromObject(data['in_cache']);
@@ -96,9 +102,19 @@ class ByDateFacet {
 ByDateFacet.prototype['count'] = undefined;
 
 /**
+ * @member {Number} files_count
+ */
+ByDateFacet.prototype['files_count'] = undefined;
+
+/**
  * @member {Number} file_size_sum
  */
 ByDateFacet.prototype['file_size_sum'] = undefined;
+
+/**
+ * @member {Number} cost
+ */
+ByDateFacet.prototype['cost'] = undefined;
 
 /**
  * @member {module:model/FileFacet} in_cache
@@ -147,9 +163,17 @@ ByDateFacet.prototype['more_2_years'] = undefined;
  */
 FileFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+FileFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 FileFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+FileFacet.prototype['cost'] = undefined;
 // Implement DateToFileFacets interface:
 /**
  * @member {module:model/FileFacet} in_cache

@@ -13,14 +13,14 @@
 
 import ApiClient from '../ApiClient';
 import ByDateFacet from './ByDateFacet';
-import BySecondaryBuckets from './BySecondaryBuckets';
+import ByDateFacetBuckets from './ByDateFacetBuckets';
 import BySecondaryTypeFacetAllOf from './BySecondaryTypeFacetAllOf';
 import FileFacet from './FileFacet';
 
 /**
  * The BySecondaryTypeFacet model module.
  * @module model/BySecondaryTypeFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class BySecondaryTypeFacet {
     /**
@@ -57,8 +57,8 @@ class BySecondaryTypeFacet {
             ByDateFacet.constructFromObject(data, obj);
             BySecondaryTypeFacetAllOf.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('secondary_name')) {
-                obj['secondary_name'] = BySecondaryBuckets.constructFromObject(data['secondary_name']);
+            if (data.hasOwnProperty('sec_pool_name_s')) {
+                obj['sec_pool_name_s'] = ByDateFacetBuckets.constructFromObject(data['sec_pool_name_s']);
             }
         }
         return obj;
@@ -68,9 +68,9 @@ class BySecondaryTypeFacet {
 }
 
 /**
- * @member {module:model/BySecondaryBuckets} secondary_name
+ * @member {module:model/ByDateFacetBuckets} sec_pool_name_s
  */
-BySecondaryTypeFacet.prototype['secondary_name'] = undefined;
+BySecondaryTypeFacet.prototype['sec_pool_name_s'] = undefined;
 
 
 // Implement ByDateFacet interface:
@@ -79,9 +79,17 @@ BySecondaryTypeFacet.prototype['secondary_name'] = undefined;
  */
 ByDateFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+ByDateFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 ByDateFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+ByDateFacet.prototype['cost'] = undefined;
 /**
  * @member {module:model/FileFacet} in_cache
  */
@@ -116,9 +124,9 @@ ByDateFacet.prototype['less_2_years'] = undefined;
 ByDateFacet.prototype['more_2_years'] = undefined;
 // Implement BySecondaryTypeFacetAllOf interface:
 /**
- * @member {module:model/BySecondaryBuckets} secondary_name
+ * @member {module:model/ByDateFacetBuckets} sec_pool_name_s
  */
-BySecondaryTypeFacetAllOf.prototype['secondary_name'] = undefined;
+BySecondaryTypeFacetAllOf.prototype['sec_pool_name_s'] = undefined;
 
 
 

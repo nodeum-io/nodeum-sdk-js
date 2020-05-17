@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByGroupOwnerFacetAllOf model module.
  * @module model/ByGroupOwnerFacetAllOf
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByGroupOwnerFacetAllOf {
     /**
@@ -48,8 +48,8 @@ class ByGroupOwnerFacetAllOf {
         if (data) {
             obj = obj || new ByGroupOwnerFacetAllOf();
 
-            if (data.hasOwnProperty('group_owner_id')) {
-                obj['group_owner_id'] = ByDateFacetBuckets.constructFromObject(data['group_owner_id']);
+            if (data.hasOwnProperty('group_owner_id_l')) {
+                obj['group_owner_id_l'] = ByDateFacetBuckets.constructFromObject(data['group_owner_id_l']);
             }
         }
         return obj;
@@ -59,9 +59,9 @@ class ByGroupOwnerFacetAllOf {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} group_owner_id
+ * @member {module:model/ByDateFacetBuckets} group_owner_id_l
  */
-ByGroupOwnerFacetAllOf.prototype['group_owner_id'] = undefined;
+ByGroupOwnerFacetAllOf.prototype['group_owner_id_l'] = undefined;
 
 
 

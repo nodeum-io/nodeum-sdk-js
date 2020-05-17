@@ -5,7 +5,9 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **count** | **Number** |  | [optional] 
+**filesCount** | **Number** |  | [optional] 
 **fileSizeSum** | **Number** |  | [optional] 
+**cost** | **Number** |  | [optional] 
 **inCache** | [**FileFacet**](FileFacet.md) |  | [optional] 
 **less1Week** | [**FileFacet**](FileFacet.md) |  | [optional] 
 **less1Month** | [**FileFacet**](FileFacet.md) |  | [optional] 

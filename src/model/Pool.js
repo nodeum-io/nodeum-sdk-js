@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Pool model module.
  * @module model/Pool
- * @version 1.85.1
+ * @version 1.86.0
  */
 class Pool {
     /**

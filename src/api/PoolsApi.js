@@ -23,7 +23,7 @@ import PrimaryScan from '../model/PrimaryScan';
 /**
 * Pools service.
 * @module api/PoolsApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class PoolsApi {
 

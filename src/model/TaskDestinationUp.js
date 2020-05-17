@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskDestinationUp model module.
  * @module model/TaskDestinationUp
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TaskDestinationUp {
     /**

@@ -18,7 +18,7 @@ import GreaterThanAllOf from './GreaterThanAllOf';
 /**
  * The GreaterThanOrEqualTo model module.
  * @module model/GreaterThanOrEqualTo
- * @version 1.85.1
+ * @version 1.86.0
  */
 class GreaterThanOrEqualTo {
     /**

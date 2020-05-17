@@ -4,7 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**count** | **Number** |  | [optional] 
+**filesCount** | **Number** |  | [optional] 
 **fileSizeSum** | **Number** |  | [optional] 
+**cost** | **Number** |  | [optional] 
 
 

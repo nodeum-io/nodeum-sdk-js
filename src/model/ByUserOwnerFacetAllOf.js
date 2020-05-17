@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByUserOwnerFacetAllOf model module.
  * @module model/ByUserOwnerFacetAllOf
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByUserOwnerFacetAllOf {
     /**
@@ -48,8 +48,8 @@ class ByUserOwnerFacetAllOf {
         if (data) {
             obj = obj || new ByUserOwnerFacetAllOf();
 
-            if (data.hasOwnProperty('user_owner_id')) {
-                obj['user_owner_id'] = ByDateFacetBuckets.constructFromObject(data['user_owner_id']);
+            if (data.hasOwnProperty('user_owner_id_l')) {
+                obj['user_owner_id_l'] = ByDateFacetBuckets.constructFromObject(data['user_owner_id_l']);
             }
         }
         return obj;
@@ -59,9 +59,9 @@ class ByUserOwnerFacetAllOf {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} user_owner_id
+ * @member {module:model/ByDateFacetBuckets} user_owner_id_l
  */
-ByUserOwnerFacetAllOf.prototype['user_owner_id'] = undefined;
+ByUserOwnerFacetAllOf.prototype['user_owner_id_l'] = undefined;
 
 
 

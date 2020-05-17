@@ -17,7 +17,7 @@ import ImportFile from './ImportFile';
 /**
  * The ImportFileCollection model module.
  * @module model/ImportFileCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ImportFileCollection {
     /**

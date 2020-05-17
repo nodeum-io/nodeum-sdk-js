@@ -12,19 +12,24 @@
  */
 
 import ApiClient from '../ApiClient';
+import DefaultFacet from './DefaultFacet';
+import FileFacetAllOf from './FileFacetAllOf';
 
 /**
  * The FileFacet model module.
  * @module model/FileFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class FileFacet {
     /**
      * Constructs a new <code>FileFacet</code>.
      * @alias module:model/FileFacet
+     * @extends module:model/DefaultFacet
+     * @implements module:model/DefaultFacet
+     * @implements module:model/FileFacetAllOf
      */
     constructor() { 
-        
+        DefaultFacet.initialize(this);FileFacetAllOf.initialize(this);
         FileFacet.initialize(this);
     }
 
@@ -46,12 +51,18 @@ class FileFacet {
     static constructFromObject(data, obj) {
         if (data) {
             obj = obj || new FileFacet();
+            DefaultFacet.constructFromObject(data, obj);
+            DefaultFacet.constructFromObject(data, obj);
+            FileFacetAllOf.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('count')) {
-                obj['count'] = ApiClient.convertToType(data['count'], 'Number');
+            if (data.hasOwnProperty('files_count')) {
+                obj['files_count'] = ApiClient.convertToType(data['files_count'], 'Number');
             }
             if (data.hasOwnProperty('file_size_sum')) {
                 obj['file_size_sum'] = ApiClient.convertToType(data['file_size_sum'], 'Number');
+            }
+            if (data.hasOwnProperty('cost')) {
+                obj['cost'] = ApiClient.convertToType(data['cost'], 'Number');
             }
         }
         return obj;
@@ -61,16 +72,39 @@ class FileFacet {
 }
 
 /**
- * @member {Number} count
+ * @member {Number} files_count
  */
-FileFacet.prototype['count'] = undefined;
+FileFacet.prototype['files_count'] = undefined;
 
 /**
  * @member {Number} file_size_sum
  */
 FileFacet.prototype['file_size_sum'] = undefined;
 
+/**
+ * @member {Number} cost
+ */
+FileFacet.prototype['cost'] = undefined;
 
+
+// Implement DefaultFacet interface:
+/**
+ * @member {Number} count
+ */
+DefaultFacet.prototype['count'] = undefined;
+// Implement FileFacetAllOf interface:
+/**
+ * @member {Number} files_count
+ */
+FileFacetAllOf.prototype['files_count'] = undefined;
+/**
+ * @member {Number} file_size_sum
+ */
+FileFacetAllOf.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+FileFacetAllOf.prototype['cost'] = undefined;
 
 
 

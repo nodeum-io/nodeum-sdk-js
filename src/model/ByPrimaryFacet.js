@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByPrimaryFacet model module.
  * @module model/ByPrimaryFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByPrimaryFacet {
     /**
@@ -56,8 +56,8 @@ class ByPrimaryFacet {
             FileFacet.constructFromObject(data, obj);
             ByPrimaryFacetAllOf.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('primary_name')) {
-                obj['primary_name'] = ByDateFacetBuckets.constructFromObject(data['primary_name']);
+            if (data.hasOwnProperty('prim_name_s')) {
+                obj['prim_name_s'] = ByDateFacetBuckets.constructFromObject(data['prim_name_s']);
             }
         }
         return obj;
@@ -67,9 +67,9 @@ class ByPrimaryFacet {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} primary_name
+ * @member {module:model/ByDateFacetBuckets} prim_name_s
  */
-ByPrimaryFacet.prototype['primary_name'] = undefined;
+ByPrimaryFacet.prototype['prim_name_s'] = undefined;
 
 
 // Implement FileFacet interface:
@@ -78,14 +78,22 @@ ByPrimaryFacet.prototype['primary_name'] = undefined;
  */
 FileFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+FileFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 FileFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+FileFacet.prototype['cost'] = undefined;
 // Implement ByPrimaryFacetAllOf interface:
 /**
- * @member {module:model/ByDateFacetBuckets} primary_name
+ * @member {module:model/ByDateFacetBuckets} prim_name_s
  */
-ByPrimaryFacetAllOf.prototype['primary_name'] = undefined;
+ByPrimaryFacetAllOf.prototype['prim_name_s'] = undefined;
 
 
 

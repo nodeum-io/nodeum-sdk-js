@@ -20,7 +20,7 @@ import TaskMetadatumCollection from '../model/TaskMetadatumCollection';
 /**
 * TaskMetadata service.
 * @module api/TaskMetadataApi
-* @version 1.85.1
+* @version 1.86.0
 */
 export default class TaskMetadataApi {
 

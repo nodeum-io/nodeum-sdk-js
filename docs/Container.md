@@ -10,8 +10,10 @@ Name | Type | Description | Notes
 **quotaTotalSize** | **Number** |  | [optional] 
 **quotaOnCache** | **Number** |  | [optional] 
 **statTotalFiles** | **Number** |  | [optional] [readonly] 
+**onlyOnCacheFileCount** | **Number** |  | [optional] [readonly] 
 **statTotalSize** | **Number** |  | [optional] [readonly] 
 **statSizeOnCache** | **Number** |  | [optional] [readonly] 
+**onlyOnCacheFileSizeSum** | **Number** |  | [optional] [readonly] 
 **guestRight** | **String** |  | [optional] 
 **lastUpdate** | **String** |  | [optional] [readonly] 
 

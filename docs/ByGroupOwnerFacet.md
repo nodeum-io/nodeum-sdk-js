@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**groupOwnerId** | [**ByDateFacetBuckets**](ByDateFacetBuckets.md) |  | [optional] 
+**groupOwnerIdL** | [**ByDateFacetBuckets**](ByDateFacetBuckets.md) |  | [optional] 
 
 

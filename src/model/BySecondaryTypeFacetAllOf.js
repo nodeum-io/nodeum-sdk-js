@@ -12,12 +12,12 @@
  */
 
 import ApiClient from '../ApiClient';
-import BySecondaryBuckets from './BySecondaryBuckets';
+import ByDateFacetBuckets from './ByDateFacetBuckets';
 
 /**
  * The BySecondaryTypeFacetAllOf model module.
  * @module model/BySecondaryTypeFacetAllOf
- * @version 1.85.1
+ * @version 1.86.0
  */
 class BySecondaryTypeFacetAllOf {
     /**
@@ -48,8 +48,8 @@ class BySecondaryTypeFacetAllOf {
         if (data) {
             obj = obj || new BySecondaryTypeFacetAllOf();
 
-            if (data.hasOwnProperty('secondary_name')) {
-                obj['secondary_name'] = BySecondaryBuckets.constructFromObject(data['secondary_name']);
+            if (data.hasOwnProperty('sec_pool_name_s')) {
+                obj['sec_pool_name_s'] = ByDateFacetBuckets.constructFromObject(data['sec_pool_name_s']);
             }
         }
         return obj;
@@ -59,9 +59,9 @@ class BySecondaryTypeFacetAllOf {
 }
 
 /**
- * @member {module:model/BySecondaryBuckets} secondary_name
+ * @member {module:model/ByDateFacetBuckets} sec_pool_name_s
  */
-BySecondaryTypeFacetAllOf.prototype['secondary_name'] = undefined;
+BySecondaryTypeFacetAllOf.prototype['sec_pool_name_s'] = undefined;
 
 
 

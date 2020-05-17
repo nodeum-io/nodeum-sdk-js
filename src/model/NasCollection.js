@@ -17,7 +17,7 @@ import Nas from './Nas';
 /**
  * The NasCollection model module.
  * @module model/NasCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class NasCollection {
     /**

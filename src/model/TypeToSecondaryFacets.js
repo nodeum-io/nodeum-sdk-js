@@ -17,7 +17,7 @@ import BySecondaryTypeFacet from './BySecondaryTypeFacet';
 /**
  * The TypeToSecondaryFacets model module.
  * @module model/TypeToSecondaryFacets
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TypeToSecondaryFacets {
     /**
@@ -60,6 +60,9 @@ class TypeToSecondaryFacets {
             if (data.hasOwnProperty('on_secondary_tape')) {
                 obj['on_secondary_tape'] = BySecondaryTypeFacet.constructFromObject(data['on_secondary_tape']);
             }
+            if (data.hasOwnProperty('on_any_secondary')) {
+                obj['on_any_secondary'] = BySecondaryTypeFacet.constructFromObject(data['on_any_secondary']);
+            }
             if (data.hasOwnProperty('on_no_secondary')) {
                 obj['on_no_secondary'] = BySecondaryTypeFacet.constructFromObject(data['on_no_secondary']);
             }
@@ -89,6 +92,11 @@ TypeToSecondaryFacets.prototype['on_secondary_object_cloud'] = undefined;
  * @member {module:model/BySecondaryTypeFacet} on_secondary_tape
  */
 TypeToSecondaryFacets.prototype['on_secondary_tape'] = undefined;
+
+/**
+ * @member {module:model/BySecondaryTypeFacet} on_any_secondary
+ */
+TypeToSecondaryFacets.prototype['on_any_secondary'] = undefined;
 
 /**
  * @member {module:model/BySecondaryTypeFacet} on_no_secondary

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TapeDriveDevice model module.
  * @module model/TapeDriveDevice
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TapeDriveDevice {
     /**

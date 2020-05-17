@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByFileExtensionFacet model module.
  * @module model/ByFileExtensionFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class ByFileExtensionFacet {
     /**
@@ -56,8 +56,8 @@ class ByFileExtensionFacet {
             FileFacet.constructFromObject(data, obj);
             ByFileExtensionFacetAllOf.constructFromObject(data, obj);
 
-            if (data.hasOwnProperty('file_extension')) {
-                obj['file_extension'] = ByDateFacetBuckets.constructFromObject(data['file_extension']);
+            if (data.hasOwnProperty('file_extension_s')) {
+                obj['file_extension_s'] = ByDateFacetBuckets.constructFromObject(data['file_extension_s']);
             }
         }
         return obj;
@@ -67,9 +67,9 @@ class ByFileExtensionFacet {
 }
 
 /**
- * @member {module:model/ByDateFacetBuckets} file_extension
+ * @member {module:model/ByDateFacetBuckets} file_extension_s
  */
-ByFileExtensionFacet.prototype['file_extension'] = undefined;
+ByFileExtensionFacet.prototype['file_extension_s'] = undefined;
 
 
 // Implement FileFacet interface:
@@ -78,14 +78,22 @@ ByFileExtensionFacet.prototype['file_extension'] = undefined;
  */
 FileFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+FileFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 FileFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+FileFacet.prototype['cost'] = undefined;
 // Implement ByFileExtensionFacetAllOf interface:
 /**
- * @member {module:model/ByDateFacetBuckets} file_extension
+ * @member {module:model/ByDateFacetBuckets} file_extension_s
  */
-ByFileExtensionFacetAllOf.prototype['file_extension'] = undefined;
+ByFileExtensionFacetAllOf.prototype['file_extension_s'] = undefined;
 
 
 

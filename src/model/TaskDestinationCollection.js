@@ -17,7 +17,7 @@ import TaskDestinationDown from './TaskDestinationDown';
 /**
  * The TaskDestinationCollection model module.
  * @module model/TaskDestinationCollection
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TaskDestinationCollection {
     /**

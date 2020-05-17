@@ -29,15 +29,32 @@ import ByFileExtensionFacet from './model/ByFileExtensionFacet';
 import ByFileExtensionFacetAllOf from './model/ByFileExtensionFacetAllOf';
 import ByGroupOwnerFacet from './model/ByGroupOwnerFacet';
 import ByGroupOwnerFacetAllOf from './model/ByGroupOwnerFacetAllOf';
+import ByPrimaryCloudFacet from './model/ByPrimaryCloudFacet';
+import ByPrimaryCloudFacetAllOf from './model/ByPrimaryCloudFacetAllOf';
 import ByPrimaryFacet from './model/ByPrimaryFacet';
 import ByPrimaryFacetAllOf from './model/ByPrimaryFacetAllOf';
-import BySecondaryBucket from './model/BySecondaryBucket';
-import BySecondaryBucketAllOf from './model/BySecondaryBucketAllOf';
-import BySecondaryBuckets from './model/BySecondaryBuckets';
-import BySecondaryFacet from './model/BySecondaryFacet';
+import ByPrimaryNasFacet from './model/ByPrimaryNasFacet';
+import ByPrimaryNasFacetAllOf from './model/ByPrimaryNasFacetAllOf';
+import ByPrimaryStorageFacet from './model/ByPrimaryStorageFacet';
+import ByPrimaryTypeFacet from './model/ByPrimaryTypeFacet';
+import BySecondaryCloudFacet from './model/BySecondaryCloudFacet';
+import BySecondaryCloudFacetAllOf from './model/BySecondaryCloudFacetAllOf';
+import BySecondaryNasFacet from './model/BySecondaryNasFacet';
+import BySecondaryNasFacetAllOf from './model/BySecondaryNasFacetAllOf';
+import BySecondaryStorageFacet from './model/BySecondaryStorageFacet';
+import BySecondaryTapeFacet from './model/BySecondaryTapeFacet';
+import BySecondaryTapeFacetAllOf from './model/BySecondaryTapeFacetAllOf';
 import BySecondaryTypeFacet from './model/BySecondaryTypeFacet';
 import BySecondaryTypeFacetAllOf from './model/BySecondaryTypeFacetAllOf';
 import BySizeFacet from './model/BySizeFacet';
+import ByTaskStatusFacet from './model/ByTaskStatusFacet';
+import ByTaskStatusFacetAllOf from './model/ByTaskStatusFacetAllOf';
+import ByTaskStorageFacet from './model/ByTaskStorageFacet';
+import ByTaskStorageFacetAllOf from './model/ByTaskStorageFacetAllOf';
+import ByTaskWorkflowFacet from './model/ByTaskWorkflowFacet';
+import ByTaskWorkflowFacetAllOf from './model/ByTaskWorkflowFacetAllOf';
+import ByTypeFacetBucket from './model/ByTypeFacetBucket';
+import ByTypeFacetBuckets from './model/ByTypeFacetBuckets';
 import ByUserOwnerFacet from './model/ByUserOwnerFacet';
 import ByUserOwnerFacetAllOf from './model/ByUserOwnerFacetAllOf';
 import CloudBucket from './model/CloudBucket';
@@ -50,8 +67,10 @@ import ContainerCollection from './model/ContainerCollection';
 import ContainerPrivilege from './model/ContainerPrivilege';
 import ContainerPrivilegeCollection from './model/ContainerPrivilegeCollection';
 import DateToFileFacets from './model/DateToFileFacets';
+import DefaultFacet from './model/DefaultFacet';
 import Error from './model/Error';
 import FileFacet from './model/FileFacet';
+import FileFacetAllOf from './model/FileFacetAllOf';
 import Frozen from './model/Frozen';
 import GreaterThan from './model/GreaterThan';
 import GreaterThanAllOf from './model/GreaterThanAllOf';
@@ -89,6 +108,16 @@ import QuotaOnCache from './model/QuotaOnCache';
 import Reset from './model/Reset';
 import ResetSections from './model/ResetSections';
 import SizeToDateFacets from './model/SizeToDateFacets';
+import StorageByTypeFacets from './model/StorageByTypeFacets';
+import StorageCloudBucketByTypeFacets from './model/StorageCloudBucketByTypeFacets';
+import StorageCloudBucketFacets from './model/StorageCloudBucketFacets';
+import StorageFacet from './model/StorageFacet';
+import StorageNasShareByTypeFacets from './model/StorageNasShareByTypeFacets';
+import StorageNasShareFacets from './model/StorageNasShareFacets';
+import StoragePoolByTypeFacets from './model/StoragePoolByTypeFacets';
+import StoragePoolFacets from './model/StoragePoolFacets';
+import StorageTapeByTypeFacets from './model/StorageTapeByTypeFacets';
+import StorageTapeFacets from './model/StorageTapeFacets';
 import SystemGroup from './model/SystemGroup';
 import SystemGroupCollection from './model/SystemGroupCollection';
 import SystemUser from './model/SystemUser';
@@ -110,6 +139,9 @@ import TapeLibraryDeviceCollection from './model/TapeLibraryDeviceCollection';
 import TapeStat from './model/TapeStat';
 import TapeStatCollection from './model/TapeStatCollection';
 import Task from './model/Task';
+import TaskByWorkflowBucket from './model/TaskByWorkflowBucket';
+import TaskByWorkflowBucketAllOf from './model/TaskByWorkflowBucketAllOf';
+import TaskByWorkflowBuckets from './model/TaskByWorkflowBuckets';
 import TaskCallback from './model/TaskCallback';
 import TaskCallbackCollection from './model/TaskCallbackCollection';
 import TaskCollection from './model/TaskCollection';
@@ -118,6 +150,10 @@ import TaskDestinationDown from './model/TaskDestinationDown';
 import TaskDestinationUp from './model/TaskDestinationUp';
 import TaskExecution from './model/TaskExecution';
 import TaskExecutionCollection from './model/TaskExecutionCollection';
+import TaskFacet from './model/TaskFacet';
+import TaskFacetAllOf from './model/TaskFacetAllOf';
+import TaskFacetBucket from './model/TaskFacetBucket';
+import TaskFacetBuckets from './model/TaskFacetBuckets';
 import TaskMetadatum from './model/TaskMetadatum';
 import TaskMetadatumCollection from './model/TaskMetadatumCollection';
 import TaskOption from './model/TaskOption';
@@ -131,7 +167,10 @@ import TooLong from './model/TooLong';
 import TooLongAllOf from './model/TooLongAllOf';
 import TooShort from './model/TooShort';
 import TooShortAllOf from './model/TooShortAllOf';
+import TypeToPrimaryFacets from './model/TypeToPrimaryFacets';
 import TypeToSecondaryFacets from './model/TypeToSecondaryFacets';
+import UserConfiguration from './model/UserConfiguration';
+import UserConfigurationCollection from './model/UserConfigurationCollection';
 import CloudBucketsApi from './api/CloudBucketsApi';
 import CloudConnectorsApi from './api/CloudConnectorsApi';
 import ContainersApi from './api/ContainersApi';
@@ -185,7 +224,7 @@ import UsersApi from './api/UsersApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.85.1
+* @version 1.86.0
 */
 export {
     /**
@@ -291,6 +330,18 @@ export {
     ByGroupOwnerFacetAllOf,
 
     /**
+     * The ByPrimaryCloudFacet model constructor.
+     * @property {module:model/ByPrimaryCloudFacet}
+     */
+    ByPrimaryCloudFacet,
+
+    /**
+     * The ByPrimaryCloudFacetAllOf model constructor.
+     * @property {module:model/ByPrimaryCloudFacetAllOf}
+     */
+    ByPrimaryCloudFacetAllOf,
+
+    /**
      * The ByPrimaryFacet model constructor.
      * @property {module:model/ByPrimaryFacet}
      */
@@ -303,28 +354,70 @@ export {
     ByPrimaryFacetAllOf,
 
     /**
-     * The BySecondaryBucket model constructor.
-     * @property {module:model/BySecondaryBucket}
+     * The ByPrimaryNasFacet model constructor.
+     * @property {module:model/ByPrimaryNasFacet}
      */
-    BySecondaryBucket,
+    ByPrimaryNasFacet,
 
     /**
-     * The BySecondaryBucketAllOf model constructor.
-     * @property {module:model/BySecondaryBucketAllOf}
+     * The ByPrimaryNasFacetAllOf model constructor.
+     * @property {module:model/ByPrimaryNasFacetAllOf}
      */
-    BySecondaryBucketAllOf,
+    ByPrimaryNasFacetAllOf,
 
     /**
-     * The BySecondaryBuckets model constructor.
-     * @property {module:model/BySecondaryBuckets}
+     * The ByPrimaryStorageFacet model constructor.
+     * @property {module:model/ByPrimaryStorageFacet}
      */
-    BySecondaryBuckets,
+    ByPrimaryStorageFacet,
 
     /**
-     * The BySecondaryFacet model constructor.
-     * @property {module:model/BySecondaryFacet}
+     * The ByPrimaryTypeFacet model constructor.
+     * @property {module:model/ByPrimaryTypeFacet}
      */
-    BySecondaryFacet,
+    ByPrimaryTypeFacet,
+
+    /**
+     * The BySecondaryCloudFacet model constructor.
+     * @property {module:model/BySecondaryCloudFacet}
+     */
+    BySecondaryCloudFacet,
+
+    /**
+     * The BySecondaryCloudFacetAllOf model constructor.
+     * @property {module:model/BySecondaryCloudFacetAllOf}
+     */
+    BySecondaryCloudFacetAllOf,
+
+    /**
+     * The BySecondaryNasFacet model constructor.
+     * @property {module:model/BySecondaryNasFacet}
+     */
+    BySecondaryNasFacet,
+
+    /**
+     * The BySecondaryNasFacetAllOf model constructor.
+     * @property {module:model/BySecondaryNasFacetAllOf}
+     */
+    BySecondaryNasFacetAllOf,
+
+    /**
+     * The BySecondaryStorageFacet model constructor.
+     * @property {module:model/BySecondaryStorageFacet}
+     */
+    BySecondaryStorageFacet,
+
+    /**
+     * The BySecondaryTapeFacet model constructor.
+     * @property {module:model/BySecondaryTapeFacet}
+     */
+    BySecondaryTapeFacet,
+
+    /**
+     * The BySecondaryTapeFacetAllOf model constructor.
+     * @property {module:model/BySecondaryTapeFacetAllOf}
+     */
+    BySecondaryTapeFacetAllOf,
 
     /**
      * The BySecondaryTypeFacet model constructor.
@@ -343,6 +436,54 @@ export {
      * @property {module:model/BySizeFacet}
      */
     BySizeFacet,
+
+    /**
+     * The ByTaskStatusFacet model constructor.
+     * @property {module:model/ByTaskStatusFacet}
+     */
+    ByTaskStatusFacet,
+
+    /**
+     * The ByTaskStatusFacetAllOf model constructor.
+     * @property {module:model/ByTaskStatusFacetAllOf}
+     */
+    ByTaskStatusFacetAllOf,
+
+    /**
+     * The ByTaskStorageFacet model constructor.
+     * @property {module:model/ByTaskStorageFacet}
+     */
+    ByTaskStorageFacet,
+
+    /**
+     * The ByTaskStorageFacetAllOf model constructor.
+     * @property {module:model/ByTaskStorageFacetAllOf}
+     */
+    ByTaskStorageFacetAllOf,
+
+    /**
+     * The ByTaskWorkflowFacet model constructor.
+     * @property {module:model/ByTaskWorkflowFacet}
+     */
+    ByTaskWorkflowFacet,
+
+    /**
+     * The ByTaskWorkflowFacetAllOf model constructor.
+     * @property {module:model/ByTaskWorkflowFacetAllOf}
+     */
+    ByTaskWorkflowFacetAllOf,
+
+    /**
+     * The ByTypeFacetBucket model constructor.
+     * @property {module:model/ByTypeFacetBucket}
+     */
+    ByTypeFacetBucket,
+
+    /**
+     * The ByTypeFacetBuckets model constructor.
+     * @property {module:model/ByTypeFacetBuckets}
+     */
+    ByTypeFacetBuckets,
 
     /**
      * The ByUserOwnerFacet model constructor.
@@ -417,6 +558,12 @@ export {
     DateToFileFacets,
 
     /**
+     * The DefaultFacet model constructor.
+     * @property {module:model/DefaultFacet}
+     */
+    DefaultFacet,
+
+    /**
      * The Error model constructor.
      * @property {module:model/Error}
      */
@@ -427,6 +574,12 @@ export {
      * @property {module:model/FileFacet}
      */
     FileFacet,
+
+    /**
+     * The FileFacetAllOf model constructor.
+     * @property {module:model/FileFacetAllOf}
+     */
+    FileFacetAllOf,
 
     /**
      * The Frozen model constructor.
@@ -651,6 +804,66 @@ export {
     SizeToDateFacets,
 
     /**
+     * The StorageByTypeFacets model constructor.
+     * @property {module:model/StorageByTypeFacets}
+     */
+    StorageByTypeFacets,
+
+    /**
+     * The StorageCloudBucketByTypeFacets model constructor.
+     * @property {module:model/StorageCloudBucketByTypeFacets}
+     */
+    StorageCloudBucketByTypeFacets,
+
+    /**
+     * The StorageCloudBucketFacets model constructor.
+     * @property {module:model/StorageCloudBucketFacets}
+     */
+    StorageCloudBucketFacets,
+
+    /**
+     * The StorageFacet model constructor.
+     * @property {module:model/StorageFacet}
+     */
+    StorageFacet,
+
+    /**
+     * The StorageNasShareByTypeFacets model constructor.
+     * @property {module:model/StorageNasShareByTypeFacets}
+     */
+    StorageNasShareByTypeFacets,
+
+    /**
+     * The StorageNasShareFacets model constructor.
+     * @property {module:model/StorageNasShareFacets}
+     */
+    StorageNasShareFacets,
+
+    /**
+     * The StoragePoolByTypeFacets model constructor.
+     * @property {module:model/StoragePoolByTypeFacets}
+     */
+    StoragePoolByTypeFacets,
+
+    /**
+     * The StoragePoolFacets model constructor.
+     * @property {module:model/StoragePoolFacets}
+     */
+    StoragePoolFacets,
+
+    /**
+     * The StorageTapeByTypeFacets model constructor.
+     * @property {module:model/StorageTapeByTypeFacets}
+     */
+    StorageTapeByTypeFacets,
+
+    /**
+     * The StorageTapeFacets model constructor.
+     * @property {module:model/StorageTapeFacets}
+     */
+    StorageTapeFacets,
+
+    /**
      * The SystemGroup model constructor.
      * @property {module:model/SystemGroup}
      */
@@ -777,6 +990,24 @@ export {
     Task,
 
     /**
+     * The TaskByWorkflowBucket model constructor.
+     * @property {module:model/TaskByWorkflowBucket}
+     */
+    TaskByWorkflowBucket,
+
+    /**
+     * The TaskByWorkflowBucketAllOf model constructor.
+     * @property {module:model/TaskByWorkflowBucketAllOf}
+     */
+    TaskByWorkflowBucketAllOf,
+
+    /**
+     * The TaskByWorkflowBuckets model constructor.
+     * @property {module:model/TaskByWorkflowBuckets}
+     */
+    TaskByWorkflowBuckets,
+
+    /**
      * The TaskCallback model constructor.
      * @property {module:model/TaskCallback}
      */
@@ -823,6 +1054,30 @@ export {
      * @property {module:model/TaskExecutionCollection}
      */
     TaskExecutionCollection,
+
+    /**
+     * The TaskFacet model constructor.
+     * @property {module:model/TaskFacet}
+     */
+    TaskFacet,
+
+    /**
+     * The TaskFacetAllOf model constructor.
+     * @property {module:model/TaskFacetAllOf}
+     */
+    TaskFacetAllOf,
+
+    /**
+     * The TaskFacetBucket model constructor.
+     * @property {module:model/TaskFacetBucket}
+     */
+    TaskFacetBucket,
+
+    /**
+     * The TaskFacetBuckets model constructor.
+     * @property {module:model/TaskFacetBuckets}
+     */
+    TaskFacetBuckets,
 
     /**
      * The TaskMetadatum model constructor.
@@ -903,10 +1158,28 @@ export {
     TooShortAllOf,
 
     /**
+     * The TypeToPrimaryFacets model constructor.
+     * @property {module:model/TypeToPrimaryFacets}
+     */
+    TypeToPrimaryFacets,
+
+    /**
      * The TypeToSecondaryFacets model constructor.
      * @property {module:model/TypeToSecondaryFacets}
      */
     TypeToSecondaryFacets,
+
+    /**
+     * The UserConfiguration model constructor.
+     * @property {module:model/UserConfiguration}
+     */
+    UserConfiguration,
+
+    /**
+     * The UserConfigurationCollection model constructor.
+     * @property {module:model/UserConfigurationCollection}
+     */
+    UserConfigurationCollection,
 
     /**
     * The CloudBucketsApi service constructor.

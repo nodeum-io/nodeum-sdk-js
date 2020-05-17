@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskMetadatum model module.
  * @module model/TaskMetadatum
- * @version 1.85.1
+ * @version 1.86.0
  */
 class TaskMetadatum {
     /**

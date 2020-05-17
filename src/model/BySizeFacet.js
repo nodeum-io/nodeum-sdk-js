@@ -19,7 +19,7 @@ import SizeToDateFacets from './SizeToDateFacets';
 /**
  * The BySizeFacet model module.
  * @module model/BySizeFacet
- * @version 1.85.1
+ * @version 1.86.0
  */
 class BySizeFacet {
     /**
@@ -57,8 +57,14 @@ class BySizeFacet {
             if (data.hasOwnProperty('count')) {
                 obj['count'] = ApiClient.convertToType(data['count'], 'Number');
             }
+            if (data.hasOwnProperty('files_count')) {
+                obj['files_count'] = ApiClient.convertToType(data['files_count'], 'Number');
+            }
             if (data.hasOwnProperty('file_size_sum')) {
                 obj['file_size_sum'] = ApiClient.convertToType(data['file_size_sum'], 'Number');
+            }
+            if (data.hasOwnProperty('cost')) {
+                obj['cost'] = ApiClient.convertToType(data['cost'], 'Number');
             }
             if (data.hasOwnProperty('less_100_kb')) {
                 obj['less_100_kb'] = ByDateFacet.constructFromObject(data['less_100_kb']);
@@ -97,9 +103,19 @@ class BySizeFacet {
 BySizeFacet.prototype['count'] = undefined;
 
 /**
+ * @member {Number} files_count
+ */
+BySizeFacet.prototype['files_count'] = undefined;
+
+/**
  * @member {Number} file_size_sum
  */
 BySizeFacet.prototype['file_size_sum'] = undefined;
+
+/**
+ * @member {Number} cost
+ */
+BySizeFacet.prototype['cost'] = undefined;
 
 /**
  * @member {module:model/ByDateFacet} less_100_kb
@@ -148,9 +164,17 @@ BySizeFacet.prototype['more_100_gb'] = undefined;
  */
 FileFacet.prototype['count'] = undefined;
 /**
+ * @member {Number} files_count
+ */
+FileFacet.prototype['files_count'] = undefined;
+/**
  * @member {Number} file_size_sum
  */
 FileFacet.prototype['file_size_sum'] = undefined;
+/**
+ * @member {Number} cost
+ */
+FileFacet.prototype['cost'] = undefined;
 // Implement SizeToDateFacets interface:
 /**
  * @member {module:model/ByDateFacet} less_100_kb

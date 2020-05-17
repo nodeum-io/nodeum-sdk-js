@@ -18,7 +18,7 @@ import TakenAllOf from './TakenAllOf';
 /**
  * The Invalid model module.
  * @module model/Invalid
- * @version 1.85.1
+ * @version 1.86.0
  */
 class Invalid {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The OnTapesFile model module.
  * @module model/OnTapesFile
- * @version 1.85.1
+ * @version 1.86.0
  */
 class OnTapesFile {
     /**
