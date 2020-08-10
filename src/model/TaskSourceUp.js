@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskSourceUp model module.
  * @module model/TaskSourceUp
- * @version 1.86.0
+ * @version 1.87.0
  */
 class TaskSourceUp {
     /**

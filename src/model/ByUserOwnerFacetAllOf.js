@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByUserOwnerFacetAllOf model module.
  * @module model/ByUserOwnerFacetAllOf
- * @version 1.86.0
+ * @version 1.87.0
  */
 class ByUserOwnerFacetAllOf {
     /**

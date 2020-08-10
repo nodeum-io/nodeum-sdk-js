@@ -17,7 +17,7 @@ import AttributeError from './AttributeError';
 /**
  * The Error model module.
  * @module model/Error
- * @version 1.86.0
+ * @version 1.87.0
  */
 class Error {
     /**

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**count** | **Number** |  | [optional] 
+**count** | **Number** |  | [optional] [readonly] 
 **nasTypeI** | [**ByTypeFacetBuckets**](ByTypeFacetBuckets.md) |  | [optional] 
 **poolTypeI** | [**ByTypeFacetBuckets**](ByTypeFacetBuckets.md) |  | [optional] 
 

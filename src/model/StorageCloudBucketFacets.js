@@ -19,7 +19,7 @@ import StorageCloudBucketByTypeFacets from './StorageCloudBucketByTypeFacets';
 /**
  * The StorageCloudBucketFacets model module.
  * @module model/StorageCloudBucketFacets
- * @version 1.86.0
+ * @version 1.87.0
  */
 class StorageCloudBucketFacets {
     /**

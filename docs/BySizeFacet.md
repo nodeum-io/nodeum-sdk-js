@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**count** | **Number** |  | [optional] 
-**filesCount** | **Number** |  | [optional] 
-**fileSizeSum** | **Number** |  | [optional] 
-**cost** | **Number** |  | [optional] 
+**count** | **Number** |  | [optional] [readonly] 
+**filesCount** | **Number** |  | [optional] [readonly] 
+**fileSizeSum** | **Number** |  | [optional] [readonly] 
+**cost** | **Number** |  | [optional] [readonly] 
 **less100Kb** | [**ByDateFacet**](ByDateFacet.md) |  | [optional] 
 **less1Mb** | [**ByDateFacet**](ByDateFacet.md) |  | [optional] 
 **less10Mb** | [**ByDateFacet**](ByDateFacet.md) |  | [optional] 

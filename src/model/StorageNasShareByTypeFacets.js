@@ -17,7 +17,7 @@ import ByTypeFacetBuckets from './ByTypeFacetBuckets';
 /**
  * The StorageNasShareByTypeFacets model module.
  * @module model/StorageNasShareByTypeFacets
- * @version 1.86.0
+ * @version 1.87.0
  */
 class StorageNasShareByTypeFacets {
     /**

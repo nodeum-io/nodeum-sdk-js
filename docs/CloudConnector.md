@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **region** | **String** |  | [optional] 
 **accessKey** | **String** |  | [optional] 
 **secretKey** | **String** |  | [optional] 
+**options** | **String** | S3FS mounting options, separated by comma | [optional] 
 
 
 
@@ -33,6 +34,8 @@ Name | Type | Description | Notes
 * `google_cloud_storage` (value: `"google_cloud_storage"`)
 
 * `openstack_swift` (value: `"openstack_swift"`)
+
+* `wasabi` (value: `"wasabi"`)
 
 
 

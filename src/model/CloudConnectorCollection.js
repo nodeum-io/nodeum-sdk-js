@@ -17,7 +17,7 @@ import CloudConnector from './CloudConnector';
 /**
  * The CloudConnectorCollection model module.
  * @module model/CloudConnectorCollection
- * @version 1.86.0
+ * @version 1.87.0
  */
 class CloudConnectorCollection {
     /**

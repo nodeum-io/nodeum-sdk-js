@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **val** | [**Object**](.md) |  | [optional] 
-**count** | **Number** |  | [optional] 
+**count** | **Number** |  | [optional] [readonly] 
 
 

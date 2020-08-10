@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TooShortAllOf model module.
  * @module model/TooShortAllOf
- * @version 1.86.0
+ * @version 1.87.0
  */
 class TooShortAllOf {
     /**

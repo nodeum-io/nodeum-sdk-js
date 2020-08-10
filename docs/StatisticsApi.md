@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**statisticsByDate**](StatisticsApi.md#statisticsByDate) | **GET** /statistics/by_date | Get statistics about files, grouped by date
 [**statisticsByFileExtension**](StatisticsApi.md#statisticsByFileExtension) | **GET** /statistics/by_file_extension | Get statistics about files, grouped by file extension
 [**statisticsByGroupOwner**](StatisticsApi.md#statisticsByGroupOwner) | **GET** /statistics/by_group_owner | Get statistics about files, grouped by owner (group)
+[**statisticsByMetadata**](StatisticsApi.md#statisticsByMetadata) | **GET** /statistics/by_metadata | Get statistics about files, grouped by metadata
 [**statisticsByPrimaryCloud**](StatisticsApi.md#statisticsByPrimaryCloud) | **GET** /statistics/by_primary_cloud | Get statistics about files, grouped by primary Cloud
 [**statisticsByPrimaryName**](StatisticsApi.md#statisticsByPrimaryName) | **GET** /statistics/by_primary_name | Get statistics about files, grouped by primary storages
 [**statisticsByPrimaryNas**](StatisticsApi.md#statisticsByPrimaryNas) | **GET** /statistics/by_primary_nas | Get statistics about files, grouped by primary NAS
@@ -18,6 +19,7 @@ Method | HTTP request | Description
 [**statisticsBySize**](StatisticsApi.md#statisticsBySize) | **GET** /statistics/by_size | Get statistics about files, grouped by size
 [**statisticsByUserOwner**](StatisticsApi.md#statisticsByUserOwner) | **GET** /statistics/by_user_owner | Get statistics about files, grouped by owner (user)
 [**statisticsStorage**](StatisticsApi.md#statisticsStorage) | **GET** /statistics/storage | Get statistics about storages, grouped by types
+[**statisticsTaskByMetadata**](StatisticsApi.md#statisticsTaskByMetadata) | **GET** /statistics/task_by_metadata | Get statistics about tasks executions, grouped by metadata
 [**statisticsTaskByStatus**](StatisticsApi.md#statisticsTaskByStatus) | **GET** /statistics/task_by_status | Get statistics about tasks executions, grouped by status
 [**statisticsTaskByStorage**](StatisticsApi.md#statisticsTaskByStorage) | **GET** /statistics/task_by_storage | Get statistics about tasks executions, grouped by source and destination
 [**statisticsTaskByWorkflow**](StatisticsApi.md#statisticsTaskByWorkflow) | **GET** /statistics/task_by_workflow | Get statistics about tasks executions, grouped by workflow
@@ -204,6 +206,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ByGroupOwnerFacet**](ByGroupOwnerFacet.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth), [BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## statisticsByMetadata
+
+> ByMetadataFacet statisticsByMetadata(opts)
+
+Get statistics about files, grouped by metadata
+
+**API Key Scope**: statistics / by_metadata
+
+### Example
+
+```javascript
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
+// Configure HTTP basic authorization: BasicAuth
+let BasicAuth = defaultClient.authentications['BasicAuth'];
+BasicAuth.username = 'YOUR USERNAME';
+BasicAuth.password = 'YOUR PASSWORD';
+// Configure API key authorization: BearerAuth
+let BearerAuth = defaultClient.authentications['BearerAuth'];
+BearerAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//BearerAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new NodeumApi.StatisticsApi();
+let opts = {
+  'q': "q_example", // String | Solr query
+  'fq': ["null"], // [String] | Solr filter query  Multiple query can be separated by `|`.
+  'dateAttr': "dateAttr_example", // String | Type of date to facet on
+  'sort': "'count'", // String | Sort results of facet
+  'limit': 10 // Number | Limit results of facet
+};
+apiInstance.statisticsByMetadata(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **q** | **String**| Solr query | [optional] 
+ **fq** | [**[String]**](String.md)| Solr filter query  Multiple query can be separated by &#x60;|&#x60;. | [optional] 
+ **dateAttr** | **String**| Type of date to facet on | [optional] 
+ **sort** | **String**| Sort results of facet | [optional] [default to &#39;count&#39;]
+ **limit** | **Number**| Limit results of facet | [optional] [default to 10]
+
+### Return type
+
+[**ByMetadataFacet**](ByMetadataFacet.md)
 
 ### Authorization
 
@@ -909,6 +976,69 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**StorageFacet**](StorageFacet.md)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth), [BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json
+
+
+## statisticsTaskByMetadata
+
+> ByTaskMetadataFacet statisticsTaskByMetadata(opts)
+
+Get statistics about tasks executions, grouped by metadata
+
+**API Key Scope**: statistics / task_by_metadata
+
+### Example
+
+```javascript
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
+// Configure HTTP basic authorization: BasicAuth
+let BasicAuth = defaultClient.authentications['BasicAuth'];
+BasicAuth.username = 'YOUR USERNAME';
+BasicAuth.password = 'YOUR PASSWORD';
+// Configure API key authorization: BearerAuth
+let BearerAuth = defaultClient.authentications['BearerAuth'];
+BearerAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//BearerAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new NodeumApi.StatisticsApi();
+let opts = {
+  'q': "q_example", // String | Solr query
+  'fq': ["null"], // [String] | Solr filter query  Multiple query can be separated by `|`.
+  'sort': "'count'", // String | Sort results of facet on task
+  'limit': 10 // Number | Limit results of facet
+};
+apiInstance.statisticsTaskByMetadata(opts, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **q** | **String**| Solr query | [optional] 
+ **fq** | [**[String]**](String.md)| Solr filter query  Multiple query can be separated by &#x60;|&#x60;. | [optional] 
+ **sort** | **String**| Sort results of facet on task | [optional] [default to &#39;count&#39;]
+ **limit** | **Number**| Limit results of facet | [optional] [default to 10]
+
+### Return type
+
+[**ByTaskMetadataFacet**](ByTaskMetadataFacet.md)
 
 ### Authorization
 

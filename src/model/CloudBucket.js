@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CloudBucket model module.
  * @module model/CloudBucket
- * @version 1.86.0
+ * @version 1.87.0
  */
 class CloudBucket {
     /**
@@ -71,6 +71,9 @@ class CloudBucket {
             if (data.hasOwnProperty('price')) {
                 obj['price'] = ApiClient.convertToType(data['price'], 'String');
             }
+            if (data.hasOwnProperty('options')) {
+                obj['options'] = ApiClient.convertToType(data['options'], 'String');
+            }
         }
         return obj;
     }
@@ -117,6 +120,12 @@ CloudBucket.prototype['location'] = undefined;
  * @member {String} price
  */
 CloudBucket.prototype['price'] = undefined;
+
+/**
+ * S3FS mounting options, separated by comma
+ * @member {String} options
+ */
+CloudBucket.prototype['options'] = undefined;
 
 
 

@@ -22,7 +22,7 @@ import Error from '../model/Error';
 /**
 * Containers service.
 * @module api/ContainersApi
-* @version 1.86.0
+* @version 1.87.0
 */
 export default class ContainersApi {
 

@@ -23,7 +23,7 @@ import MountStatus from '../model/MountStatus';
 /**
 * CloudBuckets service.
 * @module api/CloudBucketsApi
-* @version 1.86.0
+* @version 1.87.0
 */
 export default class CloudBucketsApi {
 
@@ -743,6 +743,55 @@ export default class CloudBucketsApi {
       let returnType = CloudBucket;
       return this.apiClient.callApi(
         '/pools/{pool_id}/cloud_buckets/{cloud_bucket_id}', 'PUT',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the updateConfigFileCloudBucket operation.
+     * @callback module:api/CloudBucketsApi~updateConfigFileCloudBucketCallback
+     * @param {String} error Error message, if any.
+     * @param {String} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Updates a specific cloud bucket.
+     * **API Key Scope**: cloud_buckets / update_config_file
+     * @param {String} cloudBucketId Numeric ID or name of cloud bucket.
+     * @param {File} configFile Config file to upload.
+     * @param {module:api/CloudBucketsApi~updateConfigFileCloudBucketCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link String}
+     */
+    updateConfigFileCloudBucket(cloudBucketId, configFile, callback) {
+      let postBody = null;
+      // verify the required parameter 'cloudBucketId' is set
+      if (cloudBucketId === undefined || cloudBucketId === null) {
+        throw new Error("Missing the required parameter 'cloudBucketId' when calling updateConfigFileCloudBucket");
+      }
+      // verify the required parameter 'configFile' is set
+      if (configFile === undefined || configFile === null) {
+        throw new Error("Missing the required parameter 'configFile' when calling updateConfigFileCloudBucket");
+      }
+
+      let pathParams = {
+        'cloud_bucket_id': cloudBucketId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+        'config_file': configFile
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = ['multipart/form-data'];
+      let accepts = ['application/json'];
+      let returnType = 'String';
+      return this.apiClient.callApi(
+        '/cloud_buckets/{cloud_bucket_id}/config_file', 'PUT',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

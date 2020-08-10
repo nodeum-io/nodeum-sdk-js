@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskExecution model module.
  * @module model/TaskExecution
- * @version 1.86.0
+ * @version 1.87.0
  */
 class TaskExecution {
     /**

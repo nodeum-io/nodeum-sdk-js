@@ -16,6 +16,7 @@ import ApiClient from "../ApiClient";
 import ByDateFacet from '../model/ByDateFacet';
 import ByFileExtensionFacet from '../model/ByFileExtensionFacet';
 import ByGroupOwnerFacet from '../model/ByGroupOwnerFacet';
+import ByMetadataFacet from '../model/ByMetadataFacet';
 import ByPrimaryCloudFacet from '../model/ByPrimaryCloudFacet';
 import ByPrimaryFacet from '../model/ByPrimaryFacet';
 import ByPrimaryNasFacet from '../model/ByPrimaryNasFacet';
@@ -25,6 +26,7 @@ import BySecondaryNasFacet from '../model/BySecondaryNasFacet';
 import BySecondaryStorageFacet from '../model/BySecondaryStorageFacet';
 import BySecondaryTapeFacet from '../model/BySecondaryTapeFacet';
 import BySizeFacet from '../model/BySizeFacet';
+import ByTaskMetadataFacet from '../model/ByTaskMetadataFacet';
 import ByTaskStatusFacet from '../model/ByTaskStatusFacet';
 import ByTaskStorageFacet from '../model/ByTaskStorageFacet';
 import ByTaskWorkflowFacet from '../model/ByTaskWorkflowFacet';
@@ -34,7 +36,7 @@ import StorageFacet from '../model/StorageFacet';
 /**
 * Statistics service.
 * @module api/StatisticsApi
-* @version 1.86.0
+* @version 1.87.0
 */
 export default class StatisticsApi {
 
@@ -188,6 +190,55 @@ export default class StatisticsApi {
       let returnType = ByGroupOwnerFacet;
       return this.apiClient.callApi(
         '/statistics/by_group_owner', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsByMetadata operation.
+     * @callback module:api/StatisticsApi~statisticsByMetadataCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByMetadataFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about files, grouped by metadata
+     * **API Key Scope**: statistics / by_metadata
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.dateAttr Type of date to facet on
+     * @param {module:model/String} opts.sort Sort results of facet (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsByMetadataCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByMetadataFacet}
+     */
+    statisticsByMetadata(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'date_attr': opts['dateAttr'],
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByMetadataFacet;
+      return this.apiClient.callApi(
+        '/statistics/by_metadata', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -717,6 +768,53 @@ export default class StatisticsApi {
       let returnType = StorageFacet;
       return this.apiClient.callApi(
         '/statistics/storage', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the statisticsTaskByMetadata operation.
+     * @callback module:api/StatisticsApi~statisticsTaskByMetadataCallback
+     * @param {String} error Error message, if any.
+     * @param {module:model/ByTaskMetadataFacet} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get statistics about tasks executions, grouped by metadata
+     * **API Key Scope**: statistics / task_by_metadata
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.q Solr query
+     * @param {Array.<String>} opts.fq Solr filter query  Multiple query can be separated by `|`.
+     * @param {module:model/String} opts.sort Sort results of facet on task (default to 'count')
+     * @param {Number} opts.limit Limit results of facet (default to 10)
+     * @param {module:api/StatisticsApi~statisticsTaskByMetadataCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:model/ByTaskMetadataFacet}
+     */
+    statisticsTaskByMetadata(opts, callback) {
+      opts = opts || {};
+      let postBody = null;
+
+      let pathParams = {
+      };
+      let queryParams = {
+        'q': opts['q'],
+        'fq': this.apiClient.buildCollectionParam(opts['fq'], 'pipe'),
+        'sort': opts['sort'],
+        'limit': opts['limit']
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = ['application/json'];
+      let returnType = ByTaskMetadataFacet;
+      return this.apiClient.callApi(
+        '/statistics/task_by_metadata', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

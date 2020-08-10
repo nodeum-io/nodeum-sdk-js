@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ActiveJobStatus model module.
  * @module model/ActiveJobStatus
- * @version 1.86.0
+ * @version 1.87.0
  */
 class ActiveJobStatus {
     /**

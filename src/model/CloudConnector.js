@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The CloudConnector model module.
  * @module model/CloudConnector
- * @version 1.86.0
+ * @version 1.87.0
  */
 class CloudConnector {
     /**
@@ -71,6 +71,9 @@ class CloudConnector {
             if (data.hasOwnProperty('secret_key')) {
                 obj['secret_key'] = ApiClient.convertToType(data['secret_key'], 'String');
             }
+            if (data.hasOwnProperty('options')) {
+                obj['options'] = ApiClient.convertToType(data['options'], 'String');
+            }
         }
         return obj;
     }
@@ -117,6 +120,12 @@ CloudConnector.prototype['access_key'] = undefined;
  * @member {String} secret_key
  */
 CloudConnector.prototype['secret_key'] = undefined;
+
+/**
+ * S3FS mounting options, separated by comma
+ * @member {String} options
+ */
+CloudConnector.prototype['options'] = undefined;
 
 
 
@@ -175,7 +184,13 @@ CloudConnector['ProviderEnum'] = {
      * value: "openstack_swift"
      * @const
      */
-    "openstack_swift": "openstack_swift"
+    "openstack_swift": "openstack_swift",
+
+    /**
+     * value: "wasabi"
+     * @const
+     */
+    "wasabi": "wasabi"
 };
 
 

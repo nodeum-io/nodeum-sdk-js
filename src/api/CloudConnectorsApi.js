@@ -22,7 +22,7 @@ import Error from '../model/Error';
 /**
 * CloudConnectors service.
 * @module api/CloudConnectorsApi
-* @version 1.86.0
+* @version 1.87.0
 */
 export default class CloudConnectorsApi {
 

@@ -17,7 +17,7 @@ import FileFacet from './FileFacet';
 /**
  * The DateToFileFacets model module.
  * @module model/DateToFileFacets
- * @version 1.86.0
+ * @version 1.87.0
  */
 class DateToFileFacets {
     /**

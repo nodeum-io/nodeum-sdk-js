@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The BySecondaryNasFacetAllOf model module.
  * @module model/BySecondaryNasFacetAllOf
- * @version 1.86.0
+ * @version 1.87.0
  */
 class BySecondaryNasFacetAllOf {
     /**

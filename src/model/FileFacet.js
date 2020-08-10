@@ -18,7 +18,7 @@ import FileFacetAllOf from './FileFacetAllOf';
 /**
  * The FileFacet model module.
  * @module model/FileFacet
- * @version 1.86.0
+ * @version 1.87.0
  */
 class FileFacet {
     /**

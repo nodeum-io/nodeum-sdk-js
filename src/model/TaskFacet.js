@@ -18,7 +18,7 @@ import TaskFacetAllOf from './TaskFacetAllOf';
 /**
  * The TaskFacet model module.
  * @module model/TaskFacet
- * @version 1.86.0
+ * @version 1.87.0
  */
 class TaskFacet {
     /**
@@ -73,6 +73,12 @@ class TaskFacet {
             if (data.hasOwnProperty('bandwidth_avg')) {
                 obj['bandwidth_avg'] = ApiClient.convertToType(data['bandwidth_avg'], 'Number');
             }
+            if (data.hasOwnProperty('bandwidth_count')) {
+                obj['bandwidth_count'] = ApiClient.convertToType(data['bandwidth_count'], 'Number');
+            }
+            if (data.hasOwnProperty('tasks_count')) {
+                obj['tasks_count'] = ApiClient.convertToType(data['tasks_count'], 'Number');
+            }
         }
         return obj;
     }
@@ -110,6 +116,16 @@ TaskFacet.prototype['finalized_files_sum'] = undefined;
  */
 TaskFacet.prototype['bandwidth_avg'] = undefined;
 
+/**
+ * @member {Number} bandwidth_count
+ */
+TaskFacet.prototype['bandwidth_count'] = undefined;
+
+/**
+ * @member {Number} tasks_count
+ */
+TaskFacet.prototype['tasks_count'] = undefined;
+
 
 // Implement DefaultFacet interface:
 /**
@@ -141,6 +157,14 @@ TaskFacetAllOf.prototype['finalized_files_sum'] = undefined;
  * @member {Number} bandwidth_avg
  */
 TaskFacetAllOf.prototype['bandwidth_avg'] = undefined;
+/**
+ * @member {Number} bandwidth_count
+ */
+TaskFacetAllOf.prototype['bandwidth_count'] = undefined;
+/**
+ * @member {Number} tasks_count
+ */
+TaskFacetAllOf.prototype['tasks_count'] = undefined;
 
 
 

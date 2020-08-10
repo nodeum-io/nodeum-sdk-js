@@ -29,6 +29,14 @@ import ByFileExtensionFacet from './model/ByFileExtensionFacet';
 import ByFileExtensionFacetAllOf from './model/ByFileExtensionFacetAllOf';
 import ByGroupOwnerFacet from './model/ByGroupOwnerFacet';
 import ByGroupOwnerFacetAllOf from './model/ByGroupOwnerFacetAllOf';
+import ByMetadataBucket from './model/ByMetadataBucket';
+import ByMetadataBucketAllOf from './model/ByMetadataBucketAllOf';
+import ByMetadataFacet from './model/ByMetadataFacet';
+import ByMetadataFacetAllOf from './model/ByMetadataFacetAllOf';
+import ByMetadataKeyBucket from './model/ByMetadataKeyBucket';
+import ByMetadataKeyBucketAllOf from './model/ByMetadataKeyBucketAllOf';
+import ByMetadataKeyBuckets from './model/ByMetadataKeyBuckets';
+import ByMetadataValueBuckets from './model/ByMetadataValueBuckets';
 import ByPrimaryCloudFacet from './model/ByPrimaryCloudFacet';
 import ByPrimaryCloudFacetAllOf from './model/ByPrimaryCloudFacetAllOf';
 import ByPrimaryFacet from './model/ByPrimaryFacet';
@@ -47,6 +55,8 @@ import BySecondaryTapeFacetAllOf from './model/BySecondaryTapeFacetAllOf';
 import BySecondaryTypeFacet from './model/BySecondaryTypeFacet';
 import BySecondaryTypeFacetAllOf from './model/BySecondaryTypeFacetAllOf';
 import BySizeFacet from './model/BySizeFacet';
+import ByTaskMetadataFacet from './model/ByTaskMetadataFacet';
+import ByTaskMetadataFacetAllOf from './model/ByTaskMetadataFacetAllOf';
 import ByTaskStatusFacet from './model/ByTaskStatusFacet';
 import ByTaskStatusFacetAllOf from './model/ByTaskStatusFacetAllOf';
 import ByTaskStorageFacet from './model/ByTaskStorageFacet';
@@ -71,6 +81,8 @@ import DefaultFacet from './model/DefaultFacet';
 import Error from './model/Error';
 import FileFacet from './model/FileFacet';
 import FileFacetAllOf from './model/FileFacetAllOf';
+import FileMetadataDefinition from './model/FileMetadataDefinition';
+import FileMetadataDefinitionCollection from './model/FileMetadataDefinitionCollection';
 import Frozen from './model/Frozen';
 import GreaterThan from './model/GreaterThan';
 import GreaterThanAllOf from './model/GreaterThanAllOf';
@@ -82,6 +94,7 @@ import Invalid from './model/Invalid';
 import LessThan from './model/LessThan';
 import LessThanAllOf from './model/LessThanAllOf';
 import LessThanOrEqualTo from './model/LessThanOrEqualTo';
+import MetadataDefinition from './model/MetadataDefinition';
 import MountCollection from './model/MountCollection';
 import MountInfo from './model/MountInfo';
 import MountNotification from './model/MountNotification';
@@ -154,6 +167,14 @@ import TaskFacet from './model/TaskFacet';
 import TaskFacetAllOf from './model/TaskFacetAllOf';
 import TaskFacetBucket from './model/TaskFacetBucket';
 import TaskFacetBuckets from './model/TaskFacetBuckets';
+import TaskFacetMetadataBucket from './model/TaskFacetMetadataBucket';
+import TaskFacetMetadataKeyBucket from './model/TaskFacetMetadataKeyBucket';
+import TaskFacetMetadataKeyBucketAllOf from './model/TaskFacetMetadataKeyBucketAllOf';
+import TaskFacetMetadataKeyBuckets from './model/TaskFacetMetadataKeyBuckets';
+import TaskFacetMetadataValueBuckets from './model/TaskFacetMetadataValueBuckets';
+import TaskMetadataDefinition from './model/TaskMetadataDefinition';
+import TaskMetadataDefinitionAllOf from './model/TaskMetadataDefinitionAllOf';
+import TaskMetadataDefinitionCollection from './model/TaskMetadataDefinitionCollection';
 import TaskMetadatum from './model/TaskMetadatum';
 import TaskMetadatumCollection from './model/TaskMetadatumCollection';
 import TaskOption from './model/TaskOption';
@@ -175,6 +196,7 @@ import CloudBucketsApi from './api/CloudBucketsApi';
 import CloudConnectorsApi from './api/CloudConnectorsApi';
 import ContainersApi from './api/ContainersApi';
 import FilesApi from './api/FilesApi';
+import MetadataApi from './api/MetadataApi';
 import MountsApi from './api/MountsApi';
 import NasApi from './api/NasApi';
 import NasSharesApi from './api/NasSharesApi';
@@ -224,7 +246,7 @@ import UsersApi from './api/UsersApi';
 * </pre>
 * </p>
 * @module index
-* @version 1.86.0
+* @version 1.87.0
 */
 export {
     /**
@@ -328,6 +350,54 @@ export {
      * @property {module:model/ByGroupOwnerFacetAllOf}
      */
     ByGroupOwnerFacetAllOf,
+
+    /**
+     * The ByMetadataBucket model constructor.
+     * @property {module:model/ByMetadataBucket}
+     */
+    ByMetadataBucket,
+
+    /**
+     * The ByMetadataBucketAllOf model constructor.
+     * @property {module:model/ByMetadataBucketAllOf}
+     */
+    ByMetadataBucketAllOf,
+
+    /**
+     * The ByMetadataFacet model constructor.
+     * @property {module:model/ByMetadataFacet}
+     */
+    ByMetadataFacet,
+
+    /**
+     * The ByMetadataFacetAllOf model constructor.
+     * @property {module:model/ByMetadataFacetAllOf}
+     */
+    ByMetadataFacetAllOf,
+
+    /**
+     * The ByMetadataKeyBucket model constructor.
+     * @property {module:model/ByMetadataKeyBucket}
+     */
+    ByMetadataKeyBucket,
+
+    /**
+     * The ByMetadataKeyBucketAllOf model constructor.
+     * @property {module:model/ByMetadataKeyBucketAllOf}
+     */
+    ByMetadataKeyBucketAllOf,
+
+    /**
+     * The ByMetadataKeyBuckets model constructor.
+     * @property {module:model/ByMetadataKeyBuckets}
+     */
+    ByMetadataKeyBuckets,
+
+    /**
+     * The ByMetadataValueBuckets model constructor.
+     * @property {module:model/ByMetadataValueBuckets}
+     */
+    ByMetadataValueBuckets,
 
     /**
      * The ByPrimaryCloudFacet model constructor.
@@ -436,6 +506,18 @@ export {
      * @property {module:model/BySizeFacet}
      */
     BySizeFacet,
+
+    /**
+     * The ByTaskMetadataFacet model constructor.
+     * @property {module:model/ByTaskMetadataFacet}
+     */
+    ByTaskMetadataFacet,
+
+    /**
+     * The ByTaskMetadataFacetAllOf model constructor.
+     * @property {module:model/ByTaskMetadataFacetAllOf}
+     */
+    ByTaskMetadataFacetAllOf,
 
     /**
      * The ByTaskStatusFacet model constructor.
@@ -582,6 +664,18 @@ export {
     FileFacetAllOf,
 
     /**
+     * The FileMetadataDefinition model constructor.
+     * @property {module:model/FileMetadataDefinition}
+     */
+    FileMetadataDefinition,
+
+    /**
+     * The FileMetadataDefinitionCollection model constructor.
+     * @property {module:model/FileMetadataDefinitionCollection}
+     */
+    FileMetadataDefinitionCollection,
+
+    /**
      * The Frozen model constructor.
      * @property {module:model/Frozen}
      */
@@ -646,6 +740,12 @@ export {
      * @property {module:model/LessThanOrEqualTo}
      */
     LessThanOrEqualTo,
+
+    /**
+     * The MetadataDefinition model constructor.
+     * @property {module:model/MetadataDefinition}
+     */
+    MetadataDefinition,
 
     /**
      * The MountCollection model constructor.
@@ -1080,6 +1180,54 @@ export {
     TaskFacetBuckets,
 
     /**
+     * The TaskFacetMetadataBucket model constructor.
+     * @property {module:model/TaskFacetMetadataBucket}
+     */
+    TaskFacetMetadataBucket,
+
+    /**
+     * The TaskFacetMetadataKeyBucket model constructor.
+     * @property {module:model/TaskFacetMetadataKeyBucket}
+     */
+    TaskFacetMetadataKeyBucket,
+
+    /**
+     * The TaskFacetMetadataKeyBucketAllOf model constructor.
+     * @property {module:model/TaskFacetMetadataKeyBucketAllOf}
+     */
+    TaskFacetMetadataKeyBucketAllOf,
+
+    /**
+     * The TaskFacetMetadataKeyBuckets model constructor.
+     * @property {module:model/TaskFacetMetadataKeyBuckets}
+     */
+    TaskFacetMetadataKeyBuckets,
+
+    /**
+     * The TaskFacetMetadataValueBuckets model constructor.
+     * @property {module:model/TaskFacetMetadataValueBuckets}
+     */
+    TaskFacetMetadataValueBuckets,
+
+    /**
+     * The TaskMetadataDefinition model constructor.
+     * @property {module:model/TaskMetadataDefinition}
+     */
+    TaskMetadataDefinition,
+
+    /**
+     * The TaskMetadataDefinitionAllOf model constructor.
+     * @property {module:model/TaskMetadataDefinitionAllOf}
+     */
+    TaskMetadataDefinitionAllOf,
+
+    /**
+     * The TaskMetadataDefinitionCollection model constructor.
+     * @property {module:model/TaskMetadataDefinitionCollection}
+     */
+    TaskMetadataDefinitionCollection,
+
+    /**
      * The TaskMetadatum model constructor.
      * @property {module:model/TaskMetadatum}
      */
@@ -1204,6 +1352,12 @@ export {
     * @property {module:api/FilesApi}
     */
     FilesApi,
+
+    /**
+    * The MetadataApi service constructor.
+    * @property {module:api/MetadataApi}
+    */
+    MetadataApi,
 
     /**
     * The MountsApi service constructor.

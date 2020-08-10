@@ -19,7 +19,7 @@ import StorageNasShareByTypeFacets from './StorageNasShareByTypeFacets';
 /**
  * The StorageNasShareFacets model module.
  * @module model/StorageNasShareFacets
- * @version 1.86.0
+ * @version 1.87.0
  */
 class StorageNasShareFacets {
     /**

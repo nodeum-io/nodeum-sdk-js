@@ -17,7 +17,7 @@ import Container from './Container';
 /**
  * The ContainerCollection model module.
  * @module model/ContainerCollection
- * @version 1.86.0
+ * @version 1.87.0
  */
 class ContainerCollection {
     /**

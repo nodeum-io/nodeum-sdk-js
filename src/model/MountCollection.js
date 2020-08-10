@@ -17,7 +17,7 @@ import MountInfo from './MountInfo';
 /**
  * The MountCollection model module.
  * @module model/MountCollection
- * @version 1.86.0
+ * @version 1.87.0
  */
 class MountCollection {
     /**

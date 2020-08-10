@@ -17,7 +17,7 @@ import ContainerPrivilege from './ContainerPrivilege';
 /**
  * The ContainerPrivilegeCollection model module.
  * @module model/ContainerPrivilegeCollection
- * @version 1.86.0
+ * @version 1.87.0
  */
 class ContainerPrivilegeCollection {
     /**

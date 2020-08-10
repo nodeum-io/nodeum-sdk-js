@@ -19,7 +19,7 @@ import TaskFacet from './TaskFacet';
 /**
  * The ByTaskWorkflowFacet model module.
  * @module model/ByTaskWorkflowFacet
- * @version 1.86.0
+ * @version 1.87.0
  */
 class ByTaskWorkflowFacet {
     /**
@@ -101,6 +101,14 @@ TaskFacet.prototype['finalized_files_sum'] = undefined;
  * @member {Number} bandwidth_avg
  */
 TaskFacet.prototype['bandwidth_avg'] = undefined;
+/**
+ * @member {Number} bandwidth_count
+ */
+TaskFacet.prototype['bandwidth_count'] = undefined;
+/**
+ * @member {Number} tasks_count
+ */
+TaskFacet.prototype['tasks_count'] = undefined;
 // Implement ByTaskWorkflowFacetAllOf interface:
 /**
  * @member {module:model/TaskByWorkflowBuckets} type

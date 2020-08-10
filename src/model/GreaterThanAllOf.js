@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The GreaterThanAllOf model module.
  * @module model/GreaterThanAllOf
- * @version 1.86.0
+ * @version 1.87.0
  */
 class GreaterThanAllOf {
     /**

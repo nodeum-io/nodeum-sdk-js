@@ -17,7 +17,7 @@ import ApiKey from './ApiKey';
 /**
  * The ApiKeyCollection model module.
  * @module model/ApiKeyCollection
- * @version 1.86.0
+ * @version 1.87.0
  */
 class ApiKeyCollection {
     /**

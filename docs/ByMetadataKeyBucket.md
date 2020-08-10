@@ -1,0 +1,9 @@
+# NodeumApi.ByMetadataKeyBucket
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**metaValueT** | [**ByMetadataValueBuckets**](ByMetadataValueBuckets.md) |  | [optional] 
+
+

@@ -17,7 +17,7 @@ import TaskFacetBucket from './TaskFacetBucket';
 /**
  * The TaskFacetBuckets model module.
  * @module model/TaskFacetBuckets
- * @version 1.86.0
+ * @version 1.87.0
  */
 class TaskFacetBuckets {
     /**

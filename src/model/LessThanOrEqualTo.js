@@ -18,7 +18,7 @@ import LessThanAllOf from './LessThanAllOf';
 /**
  * The LessThanOrEqualTo model module.
  * @module model/LessThanOrEqualTo
- * @version 1.86.0
+ * @version 1.87.0
  */
 class LessThanOrEqualTo {
     /**

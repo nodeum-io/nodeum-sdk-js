@@ -19,7 +19,7 @@ import TaskFacetBuckets from './TaskFacetBuckets';
 /**
  * The TaskByWorkflowBucket model module.
  * @module model/TaskByWorkflowBucket
- * @version 1.86.0
+ * @version 1.87.0
  */
 class TaskByWorkflowBucket {
     /**
@@ -118,6 +118,14 @@ TaskFacet.prototype['finalized_files_sum'] = undefined;
  * @member {Number} bandwidth_avg
  */
 TaskFacet.prototype['bandwidth_avg'] = undefined;
+/**
+ * @member {Number} bandwidth_count
+ */
+TaskFacet.prototype['bandwidth_count'] = undefined;
+/**
+ * @member {Number} tasks_count
+ */
+TaskFacet.prototype['tasks_count'] = undefined;
 
 
 

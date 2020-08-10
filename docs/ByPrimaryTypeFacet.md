@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**count** | **Number** |  | [optional] 
-**filesCount** | **Number** |  | [optional] 
-**fileSizeSum** | **Number** |  | [optional] 
-**cost** | **Number** |  | [optional] 
+**count** | **Number** |  | [optional] [readonly] 
+**filesCount** | **Number** |  | [optional] [readonly] 
+**fileSizeSum** | **Number** |  | [optional] [readonly] 
+**cost** | **Number** |  | [optional] [readonly] 
 **inCache** | [**FileFacet**](FileFacet.md) |  | [optional] 
 **less1Week** | [**FileFacet**](FileFacet.md) |  | [optional] 
 **less1Month** | [**FileFacet**](FileFacet.md) |  | [optional] 

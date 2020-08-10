@@ -17,7 +17,7 @@ import ByDateFacet from './ByDateFacet';
 /**
  * The SizeToDateFacets model module.
  * @module model/SizeToDateFacets
- * @version 1.86.0
+ * @version 1.87.0
  */
 class SizeToDateFacets {
     /**

@@ -22,7 +22,7 @@ import TapeDriveDeviceCollection from '../model/TapeDriveDeviceCollection';
 /**
 * TapeDrives service.
 * @module api/TapeDrivesApi
-* @version 1.86.0
+* @version 1.87.0
 */
 export default class TapeDrivesApi {
 

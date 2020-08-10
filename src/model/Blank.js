@@ -17,7 +17,7 @@ import AttributeError from './AttributeError';
 /**
  * The Blank model module.
  * @module model/Blank
- * @version 1.86.0
+ * @version 1.87.0
  */
 class Blank {
     /**

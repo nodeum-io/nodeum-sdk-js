@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **String** |  | [optional] 
-**uid** | **Number** |  | [optional] 
-**gid** | **Number** |  | [optional] 
-**info** | **String** |  | [optional] 
+**name** | **String** |  | [optional] [readonly] 
+**uid** | **Number** |  | [optional] [readonly] 
+**gid** | **Number** |  | [optional] [readonly] 
+**info** | **String** |  | [optional] [readonly] 
 
 
