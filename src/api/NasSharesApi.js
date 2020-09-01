@@ -22,7 +22,7 @@ import NasShareCollection from '../model/NasShareCollection';
 /**
 * NasShares service.
 * @module api/NasSharesApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class NasSharesApi {
 

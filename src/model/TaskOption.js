@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskOption model module.
  * @module model/TaskOption
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskOption {
     /**
@@ -196,6 +196,12 @@ TaskOption['TypeEnum'] = {
      * @const
      */
     "overwrite": "overwrite",
+
+    /**
+     * value: "soft_erase"
+     * @const
+     */
+    "soft_erase": "soft_erase",
 
     /**
      * value: "task_template"

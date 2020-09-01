@@ -20,7 +20,7 @@ import TaskCallbackCollection from '../model/TaskCallbackCollection';
 /**
 * TaskCallbacks service.
 * @module api/TaskCallbacksApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class TaskCallbacksApi {
 

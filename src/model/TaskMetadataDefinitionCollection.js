@@ -17,7 +17,7 @@ import TaskMetadataDefinition from './TaskMetadataDefinition';
 /**
  * The TaskMetadataDefinitionCollection model module.
  * @module model/TaskMetadataDefinitionCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskMetadataDefinitionCollection {
     /**

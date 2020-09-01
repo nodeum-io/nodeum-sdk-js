@@ -18,7 +18,7 @@ import TooLongAllOf from './TooLongAllOf';
 /**
  * The TooLong model module.
  * @module model/TooLong
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TooLong {
     /**

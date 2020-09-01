@@ -17,7 +17,7 @@ import TaskCallback from './TaskCallback';
 /**
  * The TaskCallbackCollection model module.
  * @module model/TaskCallbackCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskCallbackCollection {
     /**

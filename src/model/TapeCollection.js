@@ -17,7 +17,7 @@ import Tape from './Tape';
 /**
  * The TapeCollection model module.
  * @module model/TapeCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TapeCollection {
     /**

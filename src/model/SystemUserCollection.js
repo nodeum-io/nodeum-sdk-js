@@ -17,7 +17,7 @@ import SystemUser from './SystemUser';
 /**
  * The SystemUserCollection model module.
  * @module model/SystemUserCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class SystemUserCollection {
     /**

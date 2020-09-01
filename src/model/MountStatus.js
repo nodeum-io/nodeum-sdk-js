@@ -17,7 +17,7 @@ import MountInfo from './MountInfo';
 /**
  * The MountStatus model module.
  * @module model/MountStatus
- * @version 1.87.0
+ * @version 1.88.0
  */
 class MountStatus {
     /**

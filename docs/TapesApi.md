@@ -4,6 +4,7 @@ All URIs are relative to *http://localhost/api/v2*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**destroyTape**](TapesApi.md#destroyTape) | **DELETE** /tapes/{tape_id} | Destroys a specific tape. Only when it&#39;s an orphan.
 [**indexTapeStats**](TapesApi.md#indexTapeStats) | **GET** /tape_stats | List all tape statistics.
 [**indexTapes**](TapesApi.md#indexTapes) | **GET** /tapes | Lists all tapes.
 [**indexTapesByPool**](TapesApi.md#indexTapesByPool) | **GET** /pools/{pool_id}/tapes | Lists all tapes.
@@ -18,6 +19,61 @@ Method | HTTP request | Description
 [**showTapeStatByPool**](TapesApi.md#showTapeStatByPool) | **GET** /pools/{pool_id}/tapes/{tape_id}/tape_stat | Display statistic for a specific tape.
 [**showTapeStatByTapeLibrary**](TapesApi.md#showTapeStatByTapeLibrary) | **GET** /tape_libraries/{tape_library_id}/tapes/{tape_id}/tape_stat | Display statistic for a specific tape.
 
+
+
+## destroyTape
+
+> destroyTape(tapeId)
+
+Destroys a specific tape. Only when it&#39;s an orphan.
+
+**API Key Scope**: tapes / destroy
+
+### Example
+
+```javascript
+import NodeumApi from 'nodeum_api';
+let defaultClient = NodeumApi.ApiClient.instance;
+// Configure HTTP basic authorization: BasicAuth
+let BasicAuth = defaultClient.authentications['BasicAuth'];
+BasicAuth.username = 'YOUR USERNAME';
+BasicAuth.password = 'YOUR PASSWORD';
+// Configure API key authorization: BearerAuth
+let BearerAuth = defaultClient.authentications['BearerAuth'];
+BearerAuth.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//BearerAuth.apiKeyPrefix = 'Token';
+
+let apiInstance = new NodeumApi.TapesApi();
+let tapeId = "tapeId_example"; // String | Numeric ID, or barcode of tape.
+apiInstance.destroyTape(tapeId, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully.');
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **tapeId** | **String**| Numeric ID, or barcode of tape. | 
+
+### Return type
+
+null (empty response body)
+
+### Authorization
+
+[BasicAuth](../README.md#BasicAuth), [BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: Not defined
 
 
 ## indexTapeStats

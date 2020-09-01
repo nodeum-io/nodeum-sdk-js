@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Container model module.
  * @module model/Container
- * @version 1.87.0
+ * @version 1.88.0
  */
 class Container {
     /**

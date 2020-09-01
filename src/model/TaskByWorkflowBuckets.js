@@ -17,7 +17,7 @@ import TaskByWorkflowBucket from './TaskByWorkflowBucket';
 /**
  * The TaskByWorkflowBuckets model module.
  * @module model/TaskByWorkflowBuckets
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskByWorkflowBuckets {
     /**

@@ -17,7 +17,7 @@ import UserConfiguration from './UserConfiguration';
 /**
  * The UserConfigurationCollection model module.
  * @module model/UserConfigurationCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class UserConfigurationCollection {
     /**

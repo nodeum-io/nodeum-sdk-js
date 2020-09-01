@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The DefaultFacet model module.
  * @module model/DefaultFacet
- * @version 1.87.0
+ * @version 1.88.0
  */
 class DefaultFacet {
     /**

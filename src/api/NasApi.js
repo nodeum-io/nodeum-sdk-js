@@ -20,7 +20,7 @@ import NasCollection from '../model/NasCollection';
 /**
 * Nas service.
 * @module api/NasApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class NasApi {
 

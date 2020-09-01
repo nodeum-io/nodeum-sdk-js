@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Pool model module.
  * @module model/Pool
- * @version 1.87.0
+ * @version 1.88.0
  */
 class Pool {
     /**
@@ -65,6 +65,9 @@ class Pool {
             if (data.hasOwnProperty('primary_id')) {
                 obj['primary_id'] = ApiClient.convertToType(data['primary_id'], 'Number');
             }
+            if (data.hasOwnProperty('storage_id')) {
+                obj['storage_id'] = ApiClient.convertToType(data['storage_id'], 'Number');
+            }
         }
         return obj;
     }
@@ -101,6 +104,12 @@ Pool.prototype['content'] = undefined;
  * @member {Number} primary_id
  */
 Pool.prototype['primary_id'] = undefined;
+
+/**
+ * For pool of tapes, used to link to a tape library id
+ * @member {Number} storage_id
+ */
+Pool.prototype['storage_id'] = undefined;
 
 
 

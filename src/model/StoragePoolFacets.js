@@ -19,7 +19,7 @@ import StoragePoolByTypeFacets from './StoragePoolByTypeFacets';
 /**
  * The StoragePoolFacets model module.
  * @module model/StoragePoolFacets
- * @version 1.87.0
+ * @version 1.88.0
  */
 class StoragePoolFacets {
     /**

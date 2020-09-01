@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The UserConfiguration model module.
  * @module model/UserConfiguration
- * @version 1.87.0
+ * @version 1.88.0
  */
 class UserConfiguration {
     /**

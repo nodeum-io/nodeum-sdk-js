@@ -19,7 +19,7 @@ import FileFacet from './FileFacet';
 /**
  * The ByMetadataBucket model module.
  * @module model/ByMetadataBucket
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByMetadataBucket {
     /**

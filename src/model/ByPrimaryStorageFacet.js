@@ -19,7 +19,7 @@ import TypeToPrimaryFacets from './TypeToPrimaryFacets';
 /**
  * The ByPrimaryStorageFacet model module.
  * @module model/ByPrimaryStorageFacet
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByPrimaryStorageFacet {
     /**

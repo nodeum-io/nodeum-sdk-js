@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByFileExtensionFacetAllOf model module.
  * @module model/ByFileExtensionFacetAllOf
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByFileExtensionFacetAllOf {
     /**

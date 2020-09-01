@@ -19,7 +19,7 @@ import TaskFacetBuckets from './TaskFacetBuckets';
 /**
  * The ByTaskStatusFacet model module.
  * @module model/ByTaskStatusFacet
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByTaskStatusFacet {
     /**

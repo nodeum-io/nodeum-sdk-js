@@ -23,7 +23,7 @@ import TapeStatCollection from '../model/TapeStatCollection';
 /**
 * Tapes service.
 * @module api/TapesApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class TapesApi {
 
@@ -38,6 +38,48 @@ export default class TapesApi {
         this.apiClient = apiClient || ApiClient.instance;
     }
 
+
+    /**
+     * Callback function to receive the result of the destroyTape operation.
+     * @callback module:api/TapesApi~destroyTapeCallback
+     * @param {String} error Error message, if any.
+     * @param data This operation does not return a value.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Destroys a specific tape. Only when it's an orphan.
+     * **API Key Scope**: tapes / destroy
+     * @param {String} tapeId Numeric ID, or barcode of tape.
+     * @param {module:api/TapesApi~destroyTapeCallback} callback The callback function, accepting three arguments: error, data, response
+     */
+    destroyTape(tapeId, callback) {
+      let postBody = null;
+      // verify the required parameter 'tapeId' is set
+      if (tapeId === undefined || tapeId === null) {
+        throw new Error("Missing the required parameter 'tapeId' when calling destroyTape");
+      }
+
+      let pathParams = {
+        'tape_id': tapeId
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+      };
+      let formParams = {
+      };
+
+      let authNames = ['BasicAuth', 'BearerAuth'];
+      let contentTypes = [];
+      let accepts = [];
+      let returnType = null;
+      return this.apiClient.callApi(
+        '/tapes/{tape_id}', 'DELETE',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
 
     /**
      * Callback function to receive the result of the indexTapeStats operation.

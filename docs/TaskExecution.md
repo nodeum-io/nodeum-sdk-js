@@ -51,6 +51,8 @@ Name | Type | Description | Notes
 
 * `move` (value: `"move"`)
 
+* `erase` (value: `"erase"`)
+
 * `scan` (value: `"scan"`)
 
 * `rehydratation` (value: `"rehydratation"`)

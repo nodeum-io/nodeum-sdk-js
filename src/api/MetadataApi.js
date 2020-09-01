@@ -21,7 +21,7 @@ import TaskMetadataDefinitionCollection from '../model/TaskMetadataDefinitionCol
 /**
 * Metadata service.
 * @module api/MetadataApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class MetadataApi {
 

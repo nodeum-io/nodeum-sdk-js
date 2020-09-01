@@ -18,7 +18,7 @@ import TaskFacetAllOf from './TaskFacetAllOf';
 /**
  * The TaskFacet model module.
  * @module model/TaskFacet
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskFacet {
     /**

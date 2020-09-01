@@ -17,7 +17,7 @@ import MetadataDefinition from './MetadataDefinition';
 /**
  * The FileMetadataDefinition model module.
  * @module model/FileMetadataDefinition
- * @version 1.87.0
+ * @version 1.88.0
  */
 class FileMetadataDefinition {
     /**

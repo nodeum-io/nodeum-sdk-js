@@ -21,7 +21,7 @@ import Tape from './Tape';
 /**
  * The TaskSourceDown model module.
  * @module model/TaskSourceDown
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskSourceDown {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskExecution model module.
  * @module model/TaskExecution
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskExecution {
     /**
@@ -265,6 +265,12 @@ TaskExecution['WorkflowActionEnum'] = {
      * @const
      */
     "move": "move",
+
+    /**
+     * value: "erase"
+     * @const
+     */
+    "erase": "erase",
 
     /**
      * value: "scan"

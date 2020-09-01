@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskSchedule model module.
  * @module model/TaskSchedule
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskSchedule {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TapeStat model module.
  * @module model/TapeStat
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TapeStat {
     /**

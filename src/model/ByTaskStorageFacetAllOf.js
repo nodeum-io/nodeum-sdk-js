@@ -17,7 +17,7 @@ import TaskFacetBuckets from './TaskFacetBuckets';
 /**
  * The ByTaskStorageFacetAllOf model module.
  * @module model/ByTaskStorageFacetAllOf
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByTaskStorageFacetAllOf {
     /**

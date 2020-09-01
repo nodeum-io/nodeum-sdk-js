@@ -17,7 +17,7 @@ import ByTypeFacetBuckets from './ByTypeFacetBuckets';
 /**
  * The StorageTapeByTypeFacets model module.
  * @module model/StorageTapeByTypeFacets
- * @version 1.87.0
+ * @version 1.88.0
  */
 class StorageTapeByTypeFacets {
     /**

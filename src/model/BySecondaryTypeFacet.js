@@ -20,7 +20,7 @@ import FileFacet from './FileFacet';
 /**
  * The BySecondaryTypeFacet model module.
  * @module model/BySecondaryTypeFacet
- * @version 1.87.0
+ * @version 1.88.0
  */
 class BySecondaryTypeFacet {
     /**

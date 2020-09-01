@@ -21,7 +21,7 @@ import TaskCollection from '../model/TaskCollection';
 /**
 * Tasks service.
 * @module api/TasksApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class TasksApi {
 

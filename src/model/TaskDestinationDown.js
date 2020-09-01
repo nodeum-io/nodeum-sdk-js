@@ -20,7 +20,7 @@ import Tape from './Tape';
 /**
  * The TaskDestinationDown model module.
  * @module model/TaskDestinationDown
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskDestinationDown {
     /**

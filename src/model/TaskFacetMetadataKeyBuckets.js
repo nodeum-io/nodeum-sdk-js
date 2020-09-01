@@ -17,7 +17,7 @@ import TaskFacetMetadataKeyBucket from './TaskFacetMetadataKeyBucket';
 /**
  * The TaskFacetMetadataKeyBuckets model module.
  * @module model/TaskFacetMetadataKeyBuckets
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskFacetMetadataKeyBuckets {
     /**

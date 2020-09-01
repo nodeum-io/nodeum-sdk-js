@@ -17,7 +17,7 @@ import ByDateFacetBuckets from './ByDateFacetBuckets';
 /**
  * The ByPrimaryCloudFacetAllOf model module.
  * @module model/ByPrimaryCloudFacetAllOf
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByPrimaryCloudFacetAllOf {
     /**

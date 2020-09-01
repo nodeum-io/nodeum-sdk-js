@@ -23,7 +23,7 @@ import UserConfigurationCollection from '../model/UserConfigurationCollection';
 /**
 * Users service.
 * @module api/UsersApi
-* @version 1.87.0
+* @version 1.88.0
 */
 export default class UsersApi {
 

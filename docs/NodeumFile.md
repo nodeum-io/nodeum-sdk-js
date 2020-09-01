@@ -16,6 +16,9 @@ Name | Type | Description | Notes
 **accessDate** | **String** |  | [optional] [readonly] 
 **uid** | **Number** |  | [optional] [readonly] 
 **gid** | **Number** |  | [optional] [readonly] 
+**inCache** | **Number** |  | [optional] [readonly] 
+**offline** | **Number** |  | [optional] [readonly] 
+**extern** | **Number** |  | [optional] [readonly] 
 
 
 

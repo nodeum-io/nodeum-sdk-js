@@ -17,7 +17,7 @@ import TaskSchedule from './TaskSchedule';
 /**
  * The TaskScheduleCollection model module.
  * @module model/TaskScheduleCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskScheduleCollection {
     /**

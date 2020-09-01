@@ -18,7 +18,7 @@ import NodeumFileWithPathAllOf from './NodeumFileWithPathAllOf';
 /**
  * The NodeumFileWithPath model module.
  * @module model/NodeumFileWithPath
- * @version 1.87.0
+ * @version 1.88.0
  */
 class NodeumFileWithPath {
     /**
@@ -120,6 +120,18 @@ NodeumFile.prototype['uid'] = undefined;
  * @member {Number} gid
  */
 NodeumFile.prototype['gid'] = undefined;
+/**
+ * @member {Number} in_cache
+ */
+NodeumFile.prototype['in_cache'] = undefined;
+/**
+ * @member {Number} offline
+ */
+NodeumFile.prototype['offline'] = undefined;
+/**
+ * @member {Number} extern
+ */
+NodeumFile.prototype['extern'] = undefined;
 // Implement NodeumFileWithPathAllOf interface:
 /**
  * @member {String} file_path

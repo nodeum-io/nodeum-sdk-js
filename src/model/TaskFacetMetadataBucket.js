@@ -18,7 +18,7 @@ import TaskFacet from './TaskFacet';
 /**
  * The TaskFacetMetadataBucket model module.
  * @module model/TaskFacetMetadataBucket
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskFacetMetadataBucket {
     /**

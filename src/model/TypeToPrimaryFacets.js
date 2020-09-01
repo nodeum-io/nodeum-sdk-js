@@ -17,7 +17,7 @@ import ByPrimaryTypeFacet from './ByPrimaryTypeFacet';
 /**
  * The TypeToPrimaryFacets model module.
  * @module model/TypeToPrimaryFacets
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TypeToPrimaryFacets {
     /**

@@ -49,6 +49,8 @@ Name | Type | Description | Notes
 
 * `overwrite` (value: `"overwrite"`)
 
+* `soft_erase` (value: `"soft_erase"`)
+
 * `task_template` (value: `"task_template"`)
 
 

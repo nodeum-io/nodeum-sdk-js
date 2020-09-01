@@ -19,7 +19,7 @@ import TaskFacetBuckets from './TaskFacetBuckets';
 /**
  * The TaskByWorkflowBucket model module.
  * @module model/TaskByWorkflowBucket
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskByWorkflowBucket {
     /**

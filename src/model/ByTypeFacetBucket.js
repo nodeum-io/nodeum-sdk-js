@@ -18,7 +18,7 @@ import DefaultFacet from './DefaultFacet';
 /**
  * The ByTypeFacetBucket model module.
  * @module model/ByTypeFacetBucket
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByTypeFacetBucket {
     /**

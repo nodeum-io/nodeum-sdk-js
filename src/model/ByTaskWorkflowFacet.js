@@ -19,7 +19,7 @@ import TaskFacet from './TaskFacet';
 /**
  * The ByTaskWorkflowFacet model module.
  * @module model/ByTaskWorkflowFacet
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByTaskWorkflowFacet {
     /**

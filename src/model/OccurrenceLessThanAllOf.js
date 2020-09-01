@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The OccurrenceLessThanAllOf model module.
  * @module model/OccurrenceLessThanAllOf
- * @version 1.87.0
+ * @version 1.88.0
  */
 class OccurrenceLessThanAllOf {
     /**

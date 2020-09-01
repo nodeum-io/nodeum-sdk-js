@@ -10,6 +10,7 @@ Name | Type | Description | Notes
 **type** | **String** |  | [optional] 
 **content** | **String** |  | [optional] 
 **primaryId** | **Number** |  | [optional] [readonly] 
+**storageId** | **Number** | For pool of tapes, used to link to a tape library id | [optional] 
 
 
 

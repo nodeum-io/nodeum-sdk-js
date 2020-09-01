@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The NodeumFile model module.
  * @module model/NodeumFile
- * @version 1.87.0
+ * @version 1.88.0
  */
 class NodeumFile {
     /**
@@ -82,6 +82,15 @@ class NodeumFile {
             }
             if (data.hasOwnProperty('gid')) {
                 obj['gid'] = ApiClient.convertToType(data['gid'], 'Number');
+            }
+            if (data.hasOwnProperty('in_cache')) {
+                obj['in_cache'] = ApiClient.convertToType(data['in_cache'], 'Number');
+            }
+            if (data.hasOwnProperty('offline')) {
+                obj['offline'] = ApiClient.convertToType(data['offline'], 'Number');
+            }
+            if (data.hasOwnProperty('extern')) {
+                obj['extern'] = ApiClient.convertToType(data['extern'], 'Number');
             }
         }
         return obj;
@@ -149,6 +158,21 @@ NodeumFile.prototype['uid'] = undefined;
  * @member {Number} gid
  */
 NodeumFile.prototype['gid'] = undefined;
+
+/**
+ * @member {Number} in_cache
+ */
+NodeumFile.prototype['in_cache'] = undefined;
+
+/**
+ * @member {Number} offline
+ */
+NodeumFile.prototype['offline'] = undefined;
+
+/**
+ * @member {Number} extern
+ */
+NodeumFile.prototype['extern'] = undefined;
 
 
 

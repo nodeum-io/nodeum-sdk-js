@@ -1,6 +1,6 @@
 {
   "name": "nodeum_api",
-  "version": "1.87.0",
+  "version": "1.88.0",
   "description": "",
   "license": "Unlicense",
   "main": "dist/index.js",

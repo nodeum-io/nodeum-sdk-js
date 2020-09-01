@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The TaskMetadataDefinitionAllOf model module.
  * @module model/TaskMetadataDefinitionAllOf
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskMetadataDefinitionAllOf {
     /**

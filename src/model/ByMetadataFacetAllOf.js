@@ -17,7 +17,7 @@ import ByMetadataKeyBuckets from './ByMetadataKeyBuckets';
 /**
  * The ByMetadataFacetAllOf model module.
  * @module model/ByMetadataFacetAllOf
- * @version 1.87.0
+ * @version 1.88.0
  */
 class ByMetadataFacetAllOf {
     /**

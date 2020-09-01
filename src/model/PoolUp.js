@@ -18,7 +18,7 @@ import PoolUpAllOf from './PoolUpAllOf';
 /**
  * The PoolUp model module.
  * @module model/PoolUp
- * @version 1.87.0
+ * @version 1.88.0
  */
 class PoolUp {
     /**
@@ -112,6 +112,11 @@ Pool.prototype['content'] = undefined;
  * @member {Number} primary_id
  */
 Pool.prototype['primary_id'] = undefined;
+/**
+ * For pool of tapes, used to link to a tape library id
+ * @member {Number} storage_id
+ */
+Pool.prototype['storage_id'] = undefined;
 // Implement PoolUpAllOf interface:
 /**
  * @member {Array.<Number>} tape_ids

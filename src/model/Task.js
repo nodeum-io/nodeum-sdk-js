@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Task model module.
  * @module model/Task
- * @version 1.87.0
+ * @version 1.88.0
  */
 class Task {
     /**
@@ -281,6 +281,12 @@ Task['WorkflowActionEnum'] = {
      * @const
      */
     "move": "move",
+
+    /**
+     * value: "erase"
+     * @const
+     */
+    "erase": "erase",
 
     /**
      * value: "scan"

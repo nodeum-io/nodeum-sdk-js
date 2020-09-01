@@ -17,7 +17,7 @@ import TaskOption from './TaskOption';
 /**
  * The TaskOptionCollection model module.
  * @module model/TaskOptionCollection
- * @version 1.87.0
+ * @version 1.88.0
  */
 class TaskOptionCollection {
     /**
